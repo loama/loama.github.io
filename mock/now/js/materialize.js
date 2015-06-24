@@ -420,6 +420,8 @@ if ($) { Vel = $.Velocity } else { Vel = Velocity};
 
   $(document).ready(function(){
     $('.collapsible').collapsible();
+    $(".dropdown-button").dropdown();
+        
   });
 }( jQuery ));;(function ($) {
 

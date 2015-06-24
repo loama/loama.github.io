@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Starter Template - Materialize</title>
+
+    <!-- CSS-->
+    
+    <link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons"></link>
+    
+    
+  </head>
+  <body>
+        <div class="navbar-fixed">
+          <nav class="red darken-2" role="navigation">
+
+            <ul id="dropdown1" class="dropdown-content">
+              
+            </ul>
+
+            <div class="navbar-wrapper container"><a id="logo-container" href="#" class="brand-logo">Centraal</a>
+              <ul class="right hide-on-med-and-down">
+                
+                <li><a href="eventos.html">Eventos</a></li>
+                <li class="active"><a href="miembros.html">Miembros</a></li>
+                <li><a class="dropdown-button" data-hover="true" href="#!" data-activates="dropdown1">Otros <i class="material-icons ">arrow_drop_down</i></a></li>
+              </ul>
+
+              <ul id="nav-mobile" class="side-nav">
+                <li><a href="eventos.html">Eventos</a></li>
+                <li class="active"><a href="miembros.html">Miembros</a></li>
+                <ul>
+                  <li><a href="miembros.html">Reportes</a></li>
+                  <li><a href="miembros.html">Equipo</a></li>
+                  <li><a href="miembros.html">Cafetería</a></li>
+                  <li><a href="miembros.html">Catálogo</a></li>
+                </ul>  
+              </ul>
+              <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+          </nav>
+        </div> 
+        <div class="section no-pad-bot" id="index-banner">
+          <div class="container">
+            <br><br>
+            <h1 class="header center orange-text">Miembros</h1>
+            <div class="row center">
+              <h5 class="header col s12 light black-text">A modern responsive front-end framework based on Material Design</h5>
+            </div>
+            <div class="row center">
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Nuevo miembro</a>
+            </div>
+            <br><br>
+
+          </div>
+        </div> 
+
+      
+
+      <div class="container">
+      <nav>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label><i class="material-icons">search</i></label>
+              <i class="mdi-close">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>  
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <a href="linda.html"><img src="images/images.jpg" alt="" class="circle"></a>
+          <span class="title">Linda Serendepia</span>
+          <p>WorldOne <br>
+             lindaserendepia@worldone.com
+          </p>
+          <a href="#!" class="secondary-content"><i>Ilimitada</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <a href="http://apple.com"><img src="images/woman.png" alt="" class="circle"></a>
+          <span class="title">Amanda Ruiz</span>
+          <p>Freelance <br>
+             amy1991@gmail.com
+          </p>
+          <a href="#!" class="terciary-content"><i>C25<br>-10.00</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <a href="http://apple.com"><img src="images/boy.jpg" alt="" class="circle"></a>
+          <span class="title">Carlos McJean</span>
+          <p> Uber<br>
+             carlos@uber.com
+          </p>
+          <a href="#!" class="secondary-content"><i>Ilimitada (fijo)<br></i></a>
+        </li>
+        <li class="collection-item avatar">
+          <a href="http://apple.com"><img src="images/photo.jpg" alt="" class="circle"></a>
+          <span class="title">Jorge Suárez</span>
+          <p>Google <br>
+             jorgesuarez@google.com
+          </p>
+          <a href="#!" class="secondary-content"><i>Ilimitada<br>
+            +200.00</i></a>
+        </li>
+      </ul>
+      </div>     
+        
+        
+        <!--Modals -->
+        <div id="modal1" class="modal modal-fixed-footer">
+          <div class="modal-content">
+            <h4>Añadir miembro</h4>
+            
+          <div class="row">
+            <form class="col s12">
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="nombre(s)" type="text" class="validate">
+                  <label for="nombre">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="apellidos" type="text" class="validate">
+                  <label for="apellidos">Apellidos</label>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="celular" type="text" class="validate">
+                  <label for="celular">celular</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="cumpleanios" type="text" class="validate">
+                  <label for="cumpleanios">DD-MM-AAAA</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="facebook" type="text" class="validate">
+                  <label for="facebook">facebook</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="twitter" type="text" class="validate">
+                  <label for="twitter">twitter</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="intereses" type="text" class="materialize-textarea"></textarea>
+                  <label for="intereses">intereses</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        
+
+
+
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cancelar</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Crear</a>
+            
+          </div>
+        </div>
+
+<div class="container">
+    <div class="section">
+
+      
+  
+        
+      
+
+      </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+  <footer class="page-footer red">
+    
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text " >Jaime López</a>
+      </div>
+    </div>
+  </footer>
+
+     
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
+    <script src="bin/materialize.js"></script>
+    <script src="js/init.js"></script>
+    
+    
+  </body>
+</html>

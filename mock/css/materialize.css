@@ -2299,6 +2299,11 @@ td, th {
         position: absolute;
         top: 16px;
         right: 16px; }
+      .collection .collection-item.avatar .terciary-content {
+        position: absolute;
+        top: 16px;
+        right: 16px; }
+
     .collection .collection-item:last-child {
       border-bottom: none; }
     .collection .collection-item.active {
@@ -2325,6 +2330,10 @@ td, th {
   float: right;
   color: #26a69a; }
 
+.terciary-content {
+  float: right;
+  color: #d32f2f;
+}
 span.badge {
   min-width: 3rem;
   padding: 0 6px;
@@ -2555,6 +2564,20 @@ span.badge {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.material-icons {
+    font-family: "Material-Design-Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    word-wrap: normal;
+    font-feature-settings: "liga";
+    -moz-osx-font-smoothing: grayscale;
+}
 
 .mdi-action-3d-rotation:before {
   content: "\e600"; }
