@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Starter Template - Materialize</title>
+    <title>Eventos | Centraal</title>
 
     <!-- CSS-->
     
@@ -15,17 +15,41 @@
     
   </head>
   <body>
+
+        <ul id="dropdown1" class="dropdown-content">
+          <li><a href="#!">Reportes</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Equipo</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Cafetería</a></li>
+          <li class="divider"></li>
+          <li><a href="#!">Catálogo</a></li>
+        </ul>
+        
         <div class="navbar-fixed">
           <nav class="red darken-2" role="navigation">
+
+            <ul id="dropdown1" class="dropdown-content">
+              
+            </ul>
+
             <div class="navbar-wrapper container"><a id="logo-container" href="#" class="brand-logo">Centraal</a>
               <ul class="right hide-on-med-and-down">
+                
                 <li class="active"><a href="eventos.html">Eventos</a></li>
                 <li><a href="miembros.html">Miembros</a></li>
+                <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Otros <i class="material-icons ">arrow_drop_down</i></a></li>
               </ul>
 
               <ul id="nav-mobile" class="side-nav">
-                <li class="active"><a href="eventos.html">Eventos</a></li>
-                <li><a href="miembros.html">Miembros</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li class="active"><a href="miembros.html">Miembros</a></li>
+                <ul>
+                  <li><a href="miembros.html">Reportes</a></li>
+                  <li><a href="miembros.html">Equipo</a></li>
+                  <li><a href="miembros.html">Cafetería</a></li>
+                  <li><a href="miembros.html">Catálogo</a></li>
+                </ul>  
               </ul>
               <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
             </div>
@@ -46,51 +70,120 @@
           </div>
         </div> 
 
+      
+
+      <div class="container">
+      <nav>
+        <div class="nav-wrapper">
+          <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label><i class="material-icons">search</i></label>
+              <i class="mdi-close">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>  
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <a href="googlelaunchpad.html"><img src="images/googlelaunchpad.jpg" alt="" class="circle"></a>
+          <span class="title">Google Launchpad Week</span>
+          <p>Google (externo) <br>
+             lindaserendepia@worldone.com
+          </p>
+          <a href="#!" class="secondary-content"><i>22-28 Junio 2015<br>Patio 8:00 a 18:00 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>Público</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <a href="http://apple.com"><img src="images/worldone.jpg" alt="" class="circle"></a>
+          <span class="title">Junta WorldOne</span>
+          <p>WorldOne (interno) <br>
+             amy1991@gmail.com
+          </p>
+          <a href="#!" class="secondary-content"><i>21 Junio 2015<br>Salón Coco 8:00 a 14:00<br>Privado</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <a href="http://apple.com"><img src="images/polymer.png" alt="" class="circle"></a>
+          <span class="title">Meetup Polymer México</span>
+          <p> Diego de Granda (interno)<br>
+             diego@granda.com
+          </p>
+          <a href="#!" class="secondary-content"><i>19 de Junio 2015<br>Cafetería 19:00 a 21:00 &nbsp <br>Público</i></a>
+        </li>
+        <li class="collection-item avatar">
+          <a href="http://apple.com"><img src="images/centraal.jpg" alt="" class="circle"></a>
+          <span class="title">2do Aniversario Centraal</span>
+          <p>Centraal <br>
+             contacto@centraal.com
+          </p>
+          <a href="#!" class="secondary-content"><i>11 a 12 de Junio 2015<br>Todo de 19:00 a 2:00&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br>Público</i></a>
+        </li>
+      </ul>
+      </div>     
         
         
         <!--Modals -->
-        <div id="modal1" class="modal">
+        <div id="modal1" class="modal modal-fixed-footer">
           <div class="modal-content">
-            <h4>Nuevo evento</h4>
-
-          <div class="slider">
-            <ul class="slides">
-              <li>
-                <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
-                <div class="caption center-align">
-                  <h3>This is our big Tagline!</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-              <li>
-                <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
-                <div class="caption left-align">
-                  <h3>Left Aligned Caption</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-              <li>
-                <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
-                <div class="caption right-align">
-                  <h3>Right Aligned Caption</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-              <li>
-                <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
-                <div class="caption center-align">
-                  <h3>This is our big Tagline!</h3>
-                  <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-                </div>
-              </li>
-            </ul>
-          </div>
-      
+            <h4>Añadir miembro</h4>
             
+          <div class="row">
+            <form class="col s12">
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="nombre(s)" type="text" class="validate">
+                  <label for="nombre">Nombre</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="apellidos" type="text" class="validate">
+                  <label for="apellidos">Apellidos</label>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="celular" type="text" class="validate">
+                  <label for="celular">celular</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="cumpleanios" type="text" class="validate">
+                  <label for="cumpleanios">DD-MM-AAAA</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <input id="facebook" type="text" class="validate">
+                  <label for="facebook">facebook</label>
+                </div>
+                <div class="input-field col s6">
+                  <input id="twitter" type="text" class="validate">
+                  <label for="twitter">twitter</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="intereses" type="text" class="materialize-textarea"></textarea>
+                  <label for="intereses">intereses</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        
+
+
+
           </div>
           <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cancelar</a>
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Crear</a>
+            
           </div>
         </div>
 
@@ -114,7 +207,7 @@
     
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="orange-text " >Jaime López</a>
+      Made by <a class="orange-text" href="http://jaime-lopez.mx">Jaime López</a>
       </div>
     </div>
   </footer>
