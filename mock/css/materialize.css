@@ -2579,6 +2579,7 @@ span.badge {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 .mdi-action-3d-rotation:before {
   content: "\e600"; }
 
@@ -5378,6 +5379,14 @@ small {
     color: #fff;
     font-size: 24px;
     font-weight: 300; }
+
+  .card .card-title-icon {
+    color: #fff;
+    font-size: 58px;
+    font-weight: 300; }  
+
+
+
     .card .card-title.activator {
       cursor: pointer; }
   .card.small, .card.medium, .card.large {
