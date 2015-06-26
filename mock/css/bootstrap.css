@@ -4337,7 +4337,7 @@ tbody.collapse.in {
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
-  border-bottom: 4px solid;
+  border-bottom: 0px solid;
   content: "";
 }
 .dropup .dropdown-menu,
