@@ -81,27 +81,27 @@
 		// Chart data
 		var data = [
 			{
-				label: 'Pageviews',
+				label: 'Privado',
 				data: [
 					[moment().subtract(168, 'hours').valueOf(), 50],
-					[moment().subtract(144, 'hours').valueOf(), 620],
-					[moment().subtract(108, 'hours').valueOf(), 380],
-					[moment().subtract(70, 'hours').valueOf(), 880],
-					[moment().subtract(30, 'hours').valueOf(), 450],
-					[moment().subtract(12, 'hours').valueOf(), 600],
-					[moment().valueOf(), 20]
+					[moment().subtract(144, 'hours').valueOf(), 70],
+					[moment().subtract(108, 'hours').valueOf(), 82],
+					[moment().subtract(70, 'hours').valueOf(), 54],
+					[moment().subtract(30, 'hours').valueOf(), 88],
+					[moment().subtract(12, 'hours').valueOf(), 80],
+					[moment().valueOf(), 54]
 				],
 				last: true
 			},
 			{
-				label: 'Visitors',
+				label: 'Coworking',
 				data: [
 					[moment().subtract(168, 'hours').valueOf(), 50],
-					[moment().subtract(155, 'hours').valueOf(), 520],
-					[moment().subtract(132, 'hours').valueOf(), 200],
-					[moment().subtract(36, 'hours').valueOf(), 800],
-					[moment().subtract(12, 'hours').valueOf(), 150],
-					[moment().valueOf(), 20]
+					[moment().subtract(155, 'hours').valueOf(), 74],
+					[moment().subtract(132, 'hours').valueOf(), 44],
+					[moment().subtract(36, 'hours').valueOf(), 82],
+					[moment().subtract(12, 'hours').valueOf(), 70],
+					[moment().valueOf(), 60]
 				],
 				last: true
 			}
@@ -206,11 +206,11 @@
 				{
 					data: this.rickshawSeries[0],
 					color: $('#rickshawGraph').data('color1'),
-					name: 'temperature'
+					name: 'miembros'
 				}, {
 					data: this.rickshawSeries[1],
 					color: $('#rickshawGraph').data('color2'),
-					name: 'heat index'
+					name: 'miembros + invitados'
 				}
 			]
 		});
@@ -291,18 +291,18 @@
 			{
 				label: 'Registrations',
 				data: [
-					[moment().subtract(11, 'month').valueOf(), 1100],
-					[moment().subtract(10, 'month').valueOf(), 2450],
-					[moment().subtract(9, 'month').valueOf(), 3800],
-					[moment().subtract(8, 'month').valueOf(), 2650],
-					[moment().subtract(7, 'month').valueOf(), 3905],
-					[moment().subtract(6, 'month').valueOf(), 5250],
-					[moment().subtract(5, 'month').valueOf(), 3600],
-					[moment().subtract(4, 'month').valueOf(), 4900],
-					[moment().subtract(3, 'month').valueOf(), 6200],
-					[moment().subtract(2, 'month').valueOf(), 5195],
-					[moment().subtract(1, 'month').valueOf(), 6500],
-					[moment().valueOf(), 7805]
+					[moment().subtract(11, 'month').valueOf(), 110000],
+					[moment().subtract(10, 'month').valueOf(), 245000],
+					[moment().subtract(9, 'month').valueOf(), 380000],
+					[moment().subtract(8, 'month').valueOf(), 265000],
+					[moment().subtract(7, 'month').valueOf(), 390500],
+					[moment().subtract(6, 'month').valueOf(), 525000],
+					[moment().subtract(5, 'month').valueOf(), 360000],
+					[moment().subtract(4, 'month').valueOf(), 490000],
+					[moment().subtract(3, 'month').valueOf(), 620000],
+					[moment().subtract(2, 'month').valueOf(), 519500],
+					[moment().subtract(1, 'month').valueOf(), 650000],
+					[moment().valueOf(), 780500]
 				],
 				last: true
 			}
