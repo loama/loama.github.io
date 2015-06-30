@@ -64,19 +64,55 @@
             </div>
 
 
-            <h4>Añadir miembro</h4>
+            
           
           <ul style="width: 100%;" class="tabs tab-demo z-depth-1">
-          <li style="width: 25%;" class="tab col s3"><a class="active" href="#basica">Básica</a></li>
-          <li style="width: 25%;" class="tab col s3"><a class="" href="#profesional">Profesional</a></li>
-          <li style="width: 25%;" class="tab col s3"><a class="" href="#membresia">Membresía</a></li>
+            <li style="width: 25%;" class="tab col s3"><a class="active" href="#basica">Básica</a></li>
+            <li style="width: 25%;" class="tab col s3"><a class="" href="#profesional">Profesional</a></li>
+            <li style="width: 25%;" class="tab col s3"><a class="" href="#membresia">Membresía</a></li>
           </ul>
           </div>
+
+        <div id="modalcre" class="modal">
+          <div class="modal-content">
+            <h4>Crear nuevo usuario</h4>
+            <p>¿Confirmar?</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class=" modal-action modal-close waves-effect waves-green btn-flat">No</a>
+            <a href="usuarios.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Si</a> 
+          </div>
+        </div>
+
+        <div id="modalcanc" class="modal">
+          <div class="modal-content">
+            <h4>¿Seguro que deseas cancelar?</h4>
+            <p>Se perderán todos los cambios</p>
+          </div>
+          <div class="modal-footer">
+            <a href="#" class=" modal-action modal-close waves-effect waves-green btn-flat">No</a>
+            <a href="usuarios.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Si</a> 
+          </div>
+        </div>
+
+        <div id="modalborr" class="modal">
+          <div class="modal-content">
+            <h4>Borrador guardado</h4>
+            <p>¿Deseas continuar o salir?</p>
+          </div>
+          <div class="modal-footer">
+            <a href="usuarios.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Salir</a> 
+            <a href="#" class=" modal-action modal-close waves-effect waves-green btn-flat">Continuar</a>
+          </div>
+        </div>
 
           
         <div class="container" id="basica">
           
             <form class="col s12">
+
+            <ul class="collection with-header">
+            <li class="collection-header"><h4>Básica</h4></li>
 
               <div class="row">
                 <div class="input-field col s6">
@@ -128,13 +164,20 @@
                   <label for="intereses">intereses</label>
                 </div>
               </div>
+              </ul>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modalcanc">Cancelar</a>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modalborr"><i class="material-icons left"></i>Guardar Borrador</a>
+              <a class="waves-effect waves-light btn tab" href="#membresia"><i class="material-icons right"></i>Siguiente</a> 
             </form>
+            <br><br>
         </div>  
           
 
         <div class="container" id="profesional">
           <div class="row">
             <form class="col s12">
+            <ul class="collection with-header">
+            <li class="collection-header"><h4>Profesional</h4></li>
 
               <div class="row">
                 <div class="input-field col s6">
@@ -184,11 +227,16 @@
                   <input id="cumpleanios" type="text" class="validate">
                   <label for="cumpleanios">Razón Social</label>
                 </div>
+              </ul>  
               </div>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modalcanc">Cancelar</a>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modalborr"><i class="material-icons left"></i>Guardar Borrador</a>
+              <a class="waves-effect waves-light btn tab" href="#membresia"><i class="material-icons right"></i>Siguiente</a>
+            </form>
 
-              </form>
-            </div>  
-          </div>
+            <br><br>
+          </div>  
+        </div>
 
         <div class="container" id="membresia">
           <div class="row">
@@ -196,6 +244,7 @@
 
               <ul class="collection with-header">
               <li class="collection-header"><h4>Membresía</h4></li>
+              
               <div class="input-field col s12">
                 <select>
                   <option value="1">CxDía</option>
@@ -204,7 +253,88 @@
                   <option value="2">Ilimitada</option>
                   <option value="2">Ilimitada (fijo)</option>
                 </select>
-                <br><br><br><br><br><br><br><br><br><br><br>
+              </div>
+              
+                  <div class="col s12 m4 l3">
+                    <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/rsz_jardin.jpg" class="responsive-image" height="200px">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">CxDía</i></span>
+                        <p><a href="#">This is a link</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Titleclose</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col s12 m4 l3">
+                    <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/rsz_cafeteria.jpg" class="responsive-image" height="200px">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">C-25</i></span>
+                        <p><a href="#">This is a link</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Titleclose</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div> 
+
+                  <div class="col s12 m4 l3">
+                    <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/rsz_terraza.jpg" class="responsive-image" height="200px">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">C-50</i></span>
+                        <p><a href="#">This is a link</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Titleclose</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div> 
+
+                  <div class="col s12 m6 l3">
+                    <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/rsz_coco.jpg" class="responsive-image" height="200px">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Ilimitada</i></span>
+                        <p><a href="#">This is a link</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Titleclose</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div>                  
+
+                  <div class="col s12 m6 l3">
+                    <div class="card">
+                      <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="images/rsz_galeron.jpg" class="responsive-image" height="200px">
+                      </div>
+                      <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Ilimitada (fijo)</i></span>
+                        <p><a href="#">This is a link</a></p>
+                      </div>
+                      <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Card Titleclose</i></span>
+                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                      </div>
+                    </div>
+                  </div> 
+
               </div>
               
             </ul>
@@ -231,36 +361,16 @@
                 </form>
               </li>
             </ul>
-      
-            <ul class="collection with-header">
-              <li class="collection-header"><h4>Servicios</h4></li>
-              <li class="collection-item">
-                <form action="#">
-                  <p>
-                      <input type="checkbox" id="test6" />
-                      <label for="test6">Comida</label>
-                  </p>
-                   <p>
-                    <input type="checkbox" id="test7" checked="checked" />
-                    <label for="test7">Locker</label>
-                  </p>
-                  
-                </form>
-              </li>
-            </ul>
 
-              </form>
+            <a class="waves-effect waves-light btn modal-trigger" href="#modalcanc">Cancelar</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="#modalborr"><i class="material-icons left"></i>Guardar Borrador</a>
+            <a class="waves-effect waves-light btn modal-trigger" href="#modalcre">Crear</a>
+
+            </form>
+            <br><br>
             </div>  
           </div>
-          
-
-        <div id="row right">
-          <a class="waves-effect waves-light btn">Cancelar</a>
-          <a class="waves-effect waves-light btn"><i class="material-icons left"></i>Guardar Borrador</a>
-          <a class="waves-effect waves-light btn"><i class="material-icons right"></i>Crear</a>
-           <br><br> <br><br> <br><br>
         </div>
-       </div>
     </div>
 
 
