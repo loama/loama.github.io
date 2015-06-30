@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-    <title>Miembros | Centraal</title>
+    <title>Usuarios | Centraal</title>
 
     <!-- CSS-->
     
@@ -37,13 +37,13 @@
               <ul class="right hide-on-med-and-down">
                 
                 <li><a href="eventos.html">Eventos</a></li>
-                <li class="active"><a href="miembros.html">Miembros</a></li>
+                <li class="active"><a href="miembros.html">Usuarios</a></li>
                 <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Otros <i class="material-icons ">arrow_drop_down</i></a></li>
               </ul>
 
               <ul id="nav-mobile" class="side-nav">
                 <li><a href="eventos.html">Eventos</a></li>
-                <li class="active"><a href="miembros.html">Miembros</a></li>
+                <li class="active"><a href="miembros.html">Usuarios</a></li>
                 <ul>
                   <li><a href="miembros.html">Reportes</a></li>
                   <li><a href="miembros.html">Equipo</a></li>
@@ -62,19 +62,65 @@
             <div class="row center">
               <h5 class="header col s12 light black-text">Lista de miembros de Centraal</h5>
             </div>
-            <div class="row center">
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Nuevo miembro</a>
-            </div>
-            <br><br>
 
+            <div class="row right">
+             <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+
+            <div class="row center">     
+              <a href="usuarioscow.html" class="waves-effect waves-light btn"><i class="material-icons right">supervisor_account</i>Coworking</a>
+              <a href="usuarios.html" class="waves-effect waves-light btn disabled"><i class="material-icons left"></i>Todos</a>
+              <a href="usuariospriv.html" class="waves-effect waves-light btn"><i class="material-icons left">assignment_ind</i>Privado</a>          
+            </div>
+  
           </div>
         </div> 
 
-      
 
       <div class="container">
-   
-        
+
+      <iframe src="mi-to-dash.html" width="100%" height="650px" scrolling="no" frameborder="0"></iframe> 
+
+    <ul class="collection with-header">
+    <li class="collection-header"><h4>Invitados <a class="btn-floating btn-medium waves-effect waves-light red"><i class="material-icons">add</i></a></h4></li>      
+      <table class="bordered">
+        <thead>
+          <tr>
+              <th data-field="id">Nombre</th>
+              <th data-field="name">Con quién viene</th>
+              <th data-field="price">Entrada</th>
+              <th data-field="price">Salida</th>
+              <th data-field="date">Fecha</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Jorge UBER</td>
+            <td>8:16</td>
+            <td>9:15</td>
+            <td>28-06-15</td>
+          </tr>
+          <tr>
+            <td>Alvin</td>
+            <td>Jorge UBER</td>
+            <td>8:16</td>
+            <td>9:15</td>
+            <td>28-06-15</td>
+          </tr>
+          <tr>
+            <td>Alvin</td>
+            <td>Jorge UBER</td>
+            <td>8:16</td>
+            <td>9:15</td>
+            <td>28-06-15</td>
+          </tr>
+        </tbody>
+      </table>           
+    </ul>
+      <br><br><br><br><br>
+  
         <ul style="width: 100%;" class="tabs tab-demo z-depth-1">
           <li style="width: 25%;" class="tab col s3"><a class="active" href="#recientes">Recientes</a></li>
           <li style="width: 25%;" class="tab col s3"><a class="" href="#test1">Por nombre</a></li>
@@ -317,7 +363,7 @@
 
           
         <div class="container" id="basica">
-          <div class="row">
+          
             <form class="col s12">
 
               <div class="row">
@@ -370,10 +416,9 @@
                   <label for="intereses">intereses</label>
                 </div>
               </div>
-
-              </form>
-            </div>  
-          </div>
+            </form>
+        </div>  
+          
 
           <div class="container" id="profesional">
           <div class="row">
@@ -474,7 +519,7 @@
                 </form>
               </li>
             </ul>
-
+      
             <ul class="collection with-header">
               <li class="collection-header"><h4>Servicios</h4></li>
               <li class="collection-item">
@@ -495,6 +540,7 @@
               </form>
             </div>  
           </div>
+          </ul>
 
             <br><br><br>
 
@@ -507,7 +553,7 @@
           </div>
         </div>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br>
 
   <footer class="page-footer red">
     
