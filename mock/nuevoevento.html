@@ -35,14 +35,14 @@
             <div class="navbar-wrapper container"><a id="logo-container" href="dashboard.html" class="brand-logo">Centraal | Zamora</a>
               <ul class="right hide-on-med-and-down">
                 
-                <li><a href="eventos.html">Eventos</a></li>
-                <li class="active"><a href="usuarios.html">Usuarios</a></li>
+                <li class="active"><a href="eventos.html">Eventos</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
                 <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Otros <i class="material-icons ">arrow_drop_down</i></a></li>
               </ul>
 
               <ul id="nav-mobile" class="side-nav">
-                <li><a href="eventos.html">Eventos</a></li>
-                <li class="active"><a href="usuarios.html">Usuarios</a></li>
+                <li class="active"><a href="eventos.html">Eventos</a></li>
+                <li><a href="usuarios.html">Usuarios</a></li>
                 <ul>
                   <li><a href="miembros.html">Reportes</a></li>
                   <li><a href="miembros.html">Equipo</a></li>
@@ -58,9 +58,9 @@
         <div class="section no-pad-bot" id="index-banner">
           <div class="container">
             <br><br>
-            <h1 class="header center orange-text">Usuarios | Nuevo</h1>
+            <h1 class="header center orange-text">Eventos | Nuevo</h1>
             <div class="row center">
-              <h5 class="header col s12 light black-text">Agregar usuario</h5>
+              <h5 class="header col s12 light black-text">Añadir evento</h5>
             </div>
 
 
@@ -68,14 +68,14 @@
           
           <ul style="width: 100%;" class="tabs tab-demo z-depth-1">
             <li style="width: 25%;" class="tab col s3"><a class="active" href="#basica">Básica</a></li>
-            <li style="width: 25%;" class="tab col s3"><a class="" href="#profesional">Profesional</a></li>
-            <li style="width: 25%;" class="tab col s3"><a class="" href="#membresia">Membresía</a></li>
+            <li style="width: 25%;" class="tab col s3"><a class="" href="#profesional">Empresarial</a></li>
+            <li style="width: 25%;" class="tab col s3"><a class="" href="#membresia">Lugar</a></li>
           </ul>
           </div>
 
         <div id="modalcre" class="modal">
           <div class="modal-content">
-            <h4>Crear nuevo usuario</h4>
+            <h4>Crear nuevo evento</h4>
             <p>¿Confirmar?</p>
           </div>
           <div class="modal-footer">
@@ -128,11 +128,11 @@
               <div class="row">
                 <div class="input-field col s6">
                   <input id="nombre(s)" type="text" class="validate">
-                  <label for="nombre">Nombre</label>
+                  <label for="nombre">Nombre del evento</label>
                 </div>
                 <div class="input-field col s6">
                   <input id="apellidos" type="text" class="validate">
-                  <label for="apellidos">Apellidos</label>
+                  <label for="apellidos">Empresa</label>
                 </div>
               </div>
 
@@ -254,15 +254,14 @@
             <form class="col s12">
 
               <ul class="collection with-header">
-              <li class="collection-header"><h4>Membresía</h4></li>
+              <li class="collection-header"><h4>Lugar</h4></li>
               
               <div class="input-field col s12">
                 <select>
-                  <option value="1">CxDía</option>
-                  <option value="2">C-25</option>
-                  <option value="3">C-50</option>
-                  <option value="2">Ilimitada</option>
-                  <option value="2">Ilimitada (fijo)</option>
+                  <option value="1">Jardín</option>
+                  <option value="2">Cafetería</option>
+                  <option value="3">Terraza</option>
+                  <option value="2">Sala Coco</option>
                 </select>
               </div>
               
@@ -272,7 +271,7 @@
                         <img class="activator" src="images/rsz_jardin.jpg" class="responsive-image" height="200px">
                       </div>
                       <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">CxDía</i></span>
+                        <span class="card-title activator grey-text text-darken-4">Jardín</i></span>
                         <p><a href="#">$350 pesos más iva</a></p>
                       </div>
                       <div class="card-reveal">
@@ -288,7 +287,7 @@
                         <img class="activator" src="images/rsz_cafeteria.jpg" class="responsive-image" height="200px">
                       </div>
                       <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">C-25</i></span>
+                        <span class="card-title activator grey-text text-darken-4">Cafetería</i></span>
                         <p><a href="#">$1000 pesos más iva</a></p>
                       </div>
                       <div class="card-reveal">
@@ -304,7 +303,7 @@
                         <img class="activator" src="images/rsz_terraza.jpg" class="responsive-image" height="200px">
                       </div>
                       <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">C-50</i></span>
+                        <span class="card-title activator grey-text text-darken-4">Terraza</i></span>
                         <p><a href="#">$1900 pesos más iva</a></p>
                       </div>
                       <div class="card-reveal">
@@ -320,7 +319,7 @@
                         <img class="activator" src="images/rsz_coco.jpg" class="responsive-image" height="200px">
                       </div>
                       <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Ilimitada</i></span>
+                        <span class="card-title activator grey-text text-darken-4">Sala Coco</i></span>
                         <p><a href="#">$3600 pesos más iva</a></p>
                       </div>
                       <div class="card-reveal">
@@ -330,21 +329,7 @@
                     </div>
                   </div>                  
 
-                  <div class="col s12 m6 l3">
-                    <div class="card">
-                      <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="images/rsz_galeron.jpg" class="responsive-image" height="200px">
-                      </div>
-                      <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Ilimitada (fijo)</i></span>
-                        <p><a href="#">$4500 pesos más iva</a></p>
-                      </div>
-                      <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></i></span>
-                        <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                      </div>
-                    </div>
-                  </div> 
+               
 
               </div>
               
@@ -408,10 +393,6 @@
           </div>
         </div>
     </div>
-
-
-
-
 
 
   <footer class="page-footer red">

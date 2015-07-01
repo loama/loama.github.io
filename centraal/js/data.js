@@ -1,6 +1,6 @@
 var codropsEvents = {
 	
-	'06-26-2015' : '<a href="http://tympanus.net/codrops/2012/05/02/enhance-required-form-fields-with-css3/">Startup Weekend SmartGames</a>',
+	'06-26-2015' : '<a href="http://sw.co/">Startup Weekend SmartGames</a>',
 	'05-01-2012' : '<a href="http://tympanus.net/codrops/2012/05/01/effective-typography-driven-web-design/">Effective Typography-Driven Web Design</a>',			
 	'04-30-2012' : '<a href="http://tympanus.net/codrops/2012/04/30/fluid-css3-slideshow-with-parallax-effect/">Fluid CSS3 Slideshow with Parallax Effect</a><a href="http://tympanus.net/codrops/2012/04/30/im-creator-giveaway/">IM Creator Giveaway</a>',
 	'04-25-2012' : '<a href="http://tympanus.net/codrops/2012/04/25/flarethemes-giveaway/">FlareThemes Giveaway</a><a href="http://tympanus.net/codrops/2012/04/25/type-effects-in-web-design-its-all-about-moderation/">Type Effects in Web Design: It&#8217;s All About Moderation</a>',
