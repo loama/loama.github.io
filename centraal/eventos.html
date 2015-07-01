@@ -1,120 +1,58 @@
 <!DOCTYPE html>
-<!--[if IE 9]><html class="no-js ie9"><![endif]-->
-<!--[if gt IE 9]><!--><html class="no-js"><!--<![endif]-->
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Eventos Centraal</title>
-		<meta name="description" content="Flexible Calendar with jQuery and CSS3" />
-		<meta name="keywords" content="responsive, calendar, jquery, plugin, full page, flexible, javascript, css3, media queries" />
-		<meta name="author" content="Codrops" />
-		<link rel="shortcut icon" href="../favicon.ico"> 
-		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  		<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-		<link rel="stylesheet" type="text/css" href="css/calendar.css" />
-		<link rel="stylesheet" type="text/css" href="css/custom_2.css" />
-		<script src="js/modernizr.custom.63321.js"></script>
-	</head>
-	<body>
 
-		<iframe src="eventosframe.html" width="100%" height="58px" frameborder="0"></iframe> 
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Centraal | Espacios innovadores de trabajo</title>
 
-		<div class="container">	
-			<!-- Codrops top bar -->
-			<!--/ Codrops top bar -->
-			<header class="clearfix">
-				
-				
-			</header>
-			<section class="main">
-				<div class="custom-calendar-wrap">
-					<div id="custom-inner" class="custom-inner">
-						<div class="custom-header clearfix">
-							<nav>
-								<span id="custom-prev" class="custom-prev"></span>
-								<span id="custom-next" class="custom-next"></span>
-							</nav>
-							<h2 id="custom-month" class="custom-month"></h2>
-							<h3 id="custom-year" class="custom-year"></h3>
-							<br>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
 
-						</div>
-						<div id="calendar" class="fc-calendar-container"></div>
-					</div>
-				</div>
-			</section>
-		</div><!-- /container -->
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-		<script type="text/javascript" src="js/jquery.calendario.js"></script>
-		<script type="text/javascript" src="js/data.js"></script>
-		<script type="text/javascript">	
-			$(function() {
-			
-				var transEndEventNames = {
-						'WebkitTransition' : 'webkitTransitionEnd',
-						'MozTransition' : 'transitionend',
-						'OTransition' : 'oTransitionEnd',
-						'msTransition' : 'MSTransitionEnd',
-						'transition' : 'transitionend'
-					},
-					transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
-					$wrapper = $( '#custom-inner' ),
-					$calendar = $( '#calendar' ),
-					cal = $calendar.calendario( {
-						onDayClick : function( $el, $contentEl, dateProperties ) {
+<body>
 
-							if( $contentEl.length > 0 ) {
-								showEvents( $contentEl, dateProperties );
-							}
+  <nav class="white navbar-fixed-top" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="inicio.html" class="brand-logo"><img src="images/centraal.jpg" alt="logo centraal" height="42px"></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="espacios.html">Espacios</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="comunidad.html">Comunidad</a></li>
+        <li><a href="membresias.html">Membresías</a></li>
+        <li><a href="conocenos.html">Conócenos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
 
-						},
-						caldata : codropsEvents,
-						displayWeekAbbr : true
-					} ),
-					$month = $( '#custom-month' ).html( cal.getMonthName() ),
-					$year = $( '#custom-year' ).html( cal.getYear() );
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="espacios.html">Espacios</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+        <li><a href="comunidad.html">Comunidad</a></li>
+        <li><a href="membresias.html">Membresías</a></li>
+        <li><a href="conocenos.html">Conócenos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+ 
+<br><br>
 
-				$( '#custom-next' ).on( 'click', function() {
-					cal.gotoNextMonth( updateMonthYear );
-				} );
-				$( '#custom-prev' ).on( 'click', function() {
-					cal.gotoPreviousMonth( updateMonthYear );
-				} );
+  <div id="events">
+    <iframe src="eventos1.html" width="100%" frameborder="0"  height="1200px" scrolling="no"></iframe>
+  </div>       
 
-				function updateMonthYear() {				
-					$month.html( cal.getMonthName() );
-					$year.html( cal.getYear() );
-				}
 
-				// just an example..
-				function showEvents( $contentEl, dateProperties ) {
-
-					hideEvents();
-					
-					var $events = $( '<div id="custom-content-reveal" class="custom-content-reveal"><h4>Eventos en ' + dateProperties.monthname + ' ' + dateProperties.day + ', ' + dateProperties.year + '</h4></div>' ),
-						$close = $( '<span class="custom-content-close"></span>' ).on( 'click', hideEvents );
-
-					$events.append( $contentEl.html() , $close ).insertAfter( $wrapper );
-					
-					setTimeout( function() {
-						$events.css( 'top', '0%' );
-					}, 25 );
-
-				}
-				function hideEvents() {
-
-					var $events = $( '#custom-content-reveal' );
-					if( $events.length > 0 ) {
-						
-						$events.css( 'top', '100%' );
-						Modernizr.csstransitions ? $events.on( transEndEventName, function() { $( this ).remove(); } ) : $events.remove();
-
-					}
-
-				}
-			
-			});
-		</script>
-	</body>
+  <!--  Scripts-->
+  
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.timeago.min.js"></script>  
+    <script src="js/prism.js"></script>
+    <script src="js/bin/materialize.js"></script>
+    <script src="js/init.js"></script>
+  
+  
+  </body>
 </html>
