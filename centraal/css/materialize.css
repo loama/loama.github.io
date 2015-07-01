@@ -2025,7 +2025,7 @@ ul {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 div#events {
-  height: 100vh;
+  height: 98vh;
   overflow-y: hidden;
 }
 
@@ -5277,11 +5277,16 @@ nav {
       font-size: 2.7rem;
       height: 48px;
       line-height: 48px; }
+
+  img.logo {
+    margin-bottom: -0.5rem;
+    }
+
   nav .brand-logo {
     position: absolute;
     color: #fff;
     display: inline-block;
-    margin-top: .5rem;
+    margin-bottom: 0.2rem;
     font-size: 2.1rem;
     white-space: nowrap; }
     nav .brand-logo.center {
