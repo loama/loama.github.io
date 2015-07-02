@@ -64,12 +64,60 @@
           </div>
         </div> 
 
+        <div class="fixed-action-btn" style="top: 160px; left: 24px;">
+          <a href="#modalag" class="btn-floating btn-large waves-effect waves-light red modal-trigger"><i class="material-icons">add</i></a>
+        </div>
+        <div class="fixed-action-btn" style="top: 240px; left: 24px;">
+          <a href="#modalin" class="btn-floating btn-large waves-effect waves-light red modal-trigger"><i class="material-icons">perm_identity</i></a>
+        </div>
+
        <iframe src="dashboard2.html" width="100%" height="1200px" scrolling="no" frameborder="0"></iframe> 
 
       
         
         
         <!--Modals -->
+        <div id="modalag" class="modal">
+          <div class="modal-content">
+            <div class="input-field col s12">
+              <select>
+                <option value="" disabled selected>Partner</option>
+                <option value="1">Uber</option>
+                <option value="2">Google</option>
+                <option value="3">Centraal</option>
+              </select>
+              <label>Escoger partner</label>
+            </div>
+            
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cancelar</a>
+            <a href="partner.html" class="modal-action modal-close waves-effect waves-red btn-flat ">Nuevo Partner</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Crear</a>
+            
+          </div>
+        </div>  
+
+        <div id="modalin" class="modal">
+          <div class="nav-wrapper">
+            <form>
+              <div class="input-field">
+                <br>
+                <input id="search" type="search" required>
+                <label for="search"><i class="material-icons">search</i></label>
+                <br>
+              </div>
+            </form>
+          </div>
+            
+          
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cancelar</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Iniciar registro</a>
+            
+          </div>
+        </div>
+
         <div id="modal1" class="modal">
           <div class="modal-content">
             
