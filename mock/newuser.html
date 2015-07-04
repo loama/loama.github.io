@@ -36,15 +36,15 @@
               <ul class="right hide-on-med-and-down">
                 
                 <li><a href="eventos.html">Eventos</a></li>
-                <li class="active"><a href="clientes.html">Clientes</a></li>
-                <li><a href="usuarios.html">Usuarios</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li class="active"><a href="usuarios.html">Usuarios</a></li>
                 <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Otros <i class="material-icons ">arrow_drop_down</i></a></li>
               </ul>
 
               <ul id="nav-mobile" class="side-nav">
                 <li><a href="eventos.html">Eventos</a></li>
-                <li class="active"><a href="clientes.html">Clientes</a></li>
-                <li><a href="usuarios.html">Usuarios</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li  class="active"><a href="usuarios.html">Usuarios</a></li>
                 <ul>
                   <li><a href="miembros.html">Reportes</a></li>
                   <li><a href="miembros.html">Equipo</a></li>
@@ -60,9 +60,9 @@
         <div class="section no-pad-bot" id="index-banner">
           <div class="container">
             <br><br>
-            <h1 class="header center orange-text">Cliente | Nuevo</h1>
+            <h1 class="header center orange-text">Usuario | Nuevo</h1>
             <div class="row center">
-              <h5 class="header col s12 light black-text">Persona</h5>
+              <h5 class="header col s12 light black-text">Uber</h5>
 
 			      		<!-- Switch -->
 			  <div class="switch row right">
@@ -93,7 +93,6 @@
           <ul style="width: 100%;" class="tabs tab-demo z-depth-1">
             <li style="width: 25%;" class="tab col s3"><a class="active" href="#basica">Información</a></li>
             <li style="width: 25%;" class="tab col s3"><a class="" href="#profesional">Productos</a></li>
-            <li style="width: 25%;" class="tab col s3"><a class="" href="#membresia">Usuarios</a></li>
           </ul>
           </div>
 
@@ -156,6 +155,18 @@
 		            <td>Total</td>
 		            <td>$3600</td>
 		          </tr>
+		        </tbody>
+		      </table>
+		      <table>
+		        <thead>
+		          <tr>
+		              <th data-field="id">Forma de pago</th>
+		              <th data-field="name"> Default del cliente</th>
+		          </tr>
+		        </thead>
+
+		        <tbody>
+		          		      
 		        </tbody>
 		      </table>
 
@@ -294,7 +305,7 @@
 				      <div class="collapsible-header"><i class="material-icons">receipt</i>
 
 				      Requiere factura 
-				      	<input name="receipt" type="radio" id="receipt1" />
+				      	<input name="receipt" type="radio" checked id="receipt1" />
       					<label for="receipt1">Si</label>
 
       					<input name="receipt" type="radio" id="receipt2" />
@@ -304,11 +315,11 @@
 				      	<div class="container">
 				      	<div class="row">
 			                <div class="input-field col s6">
-			                  <input id="rfc" type="text" class="validate">
+			                  <input id="rfc" value="UMT0142359RY2" type="text" class="validate">
 			                  <label for="rfc">RFC</label>
 			                </div>
 			                <div class="input-field col s6">
-			                  <input id="fact" type="text" class="validate">
+			                  <input id="fact" value="01 de cada mes" type="text" class="validate">
 			                  <label for="fact">Fecha de facturación</label>
 			                </div>
 			            </div>
@@ -499,86 +510,11 @@
             <div class="row right">
 	            <a class="waves-effect waves-light btn modal-trigger" href="#modalcanc">Cancelar</a>
 	            <a class="waves-effect waves-light btn modal-trigger" href="#modalborr"><i class="material-icons left"></i>Guardar Borrador</a>
-	            <a class="waves-effect waves-light btn " href="#membresia">Siguiente</a>
+	            <a class="waves-effect waves-light btn modal-trigger" href="#modalre">Resumen</a>
 	        </div>
 
          	<br><br>
             
-        </div>
-
-        <div class="container" id="membresia">
-          <div class="row">
-            <form class="col s12">
-
-              <ul class="collection">
-			    <li class="collection-item avatar">
-			      <i class="material-icons circle">folder</i>
-			      <span class="title">Adrián</span>
-			      <p>Membresía ilimitada <br>
-			         Comida, Estacionamiento, Locker.
-			      </p>
-			      <a href="#modaledi" class="secondary-content modal-trigger"><i class="material-icons">brush</i><p><br>RFID: 180250<br>Espacio: Coworking 81</a>
-			    </li>
-
-			    
-			    <li class="collection-item avatar">
-			      
-			      <a href="#modalcre" class="secondary-content modal-trigger"><i class="material-icons">add</i></a>
-			    </li>
-			  </ul>
-
-            
-
-            <ul class="collection with-header">
-              
-              <li class="collection-header"><h4>Forma de pago</h4></li>
-             	
-             	<div class="col s6">
-
-              	<li class="collection-item">
-                <form action="#">
-                  
-                  <div class="input-field col s12">
-                    <select>
-                      <option value="1">Efectivo</option>
-                      <option value="2">Transferencia</option>
-                      <option value="2">Tarjeta de débito</option>
-                      <option value="3">Tarjeta de crédito</option>
-                      <option value="4">Cheque</option>
-                    </select>
-                  </div>
-              </div>
-
-              <div class="col s6">
-                  
-                  	<br>
-                      <input type="text" id="test6" />
-                      <label for="test6">Descuento</label>
-                    <br>
-                  <div class="row right">
-                  <a class="waves-effect waves-light btn modal-trigger" href="#modalpro">Aplicar</a>
-                  <a class="waves-effect waves-light btn modal-trigger" href="#modalpag">Pagar</a>
-                  &nbsp
-                  </div>
-                  <br><br><br><br><br>
-                  
-                </form>
-               </div> 
-              </li>
-
-            </ul>
-
-
-            <div class="row right">
-	            <a class="waves-effect waves-light btn modal-trigger" href="#modalcanc">Cancelar</a>
-	            <a class="waves-effect waves-light btn modal-trigger" href="#modalborr"><i class="material-icons left"></i>Guardar Borrador</a>
-	            <a class="waves-effect waves-light btn modal-trigger" href="#modalre">Resumen</a>
-	        </div>
-
-            </form>
-            <br><br>
-            </div>  
-          </div>
         </div>
     </div>
 

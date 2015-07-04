@@ -75,8 +75,8 @@
             <ul>
               <li><a class="btn-floating red"><i class="material-icons">today</i></i></a></li>
               <li><a href="newcliententerprise.html" class="btn-floating yellow darken-1"><i class="material-icons">person_pin</i></a></li>
-              <li><a class="btn-floating green"><i class="material-icons">supervisor_account</i></a></li>
-              <li><a class="btn-floating blue"><i class="material-icons">perm_contact_calendar</i></a></li>
+              <li><a class="btn-floating green modal-trigger" href="#modalag"><i class="material-icons">supervisor_account</i></a></li>
+              <li><a class="btn-floating blue modal-trigger" href="#modalin"><i class="material-icons">perm_contact_calendar</i></a></li>
             </ul>
           
         </div>  
@@ -92,6 +92,8 @@
         <!--Modals -->
         <div id="modalag" class="modal">
           <div class="modal-content">
+          <h3>Agregar usuario</h3>
+          <br>
             <div class="input-field col s12">
               <select>
                 <option value="" disabled selected>Nuevo Cliente</option>
@@ -101,31 +103,58 @@
               </select>
               <label>Escoger cliente</label>
             </div>
+            <br><br><br><br>
             
           </div>
           <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cancelar</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Crear</a>
+            <a href="newuser.html" class="modal-action modal-close waves-effect waves-green btn-flat ">Crear</a>
             
           </div>
         </div>  
 
         <div id="modalin" class="modal">
-          <div class="nav-wrapper">
-            <form>
-              <div class="input-field">
-                <br>
-                <input id="search" type="search" required>
-                <label for="search"><i class="material-icons">search</i></label>
-                <br>
-              </div>
-            </form>
+          <div class="modal-content">
+            <h3>Nuevo invitado</h3>
+            <div class="container">
+              <form>
+                <div class="input-field col s12">
+                  <br>
+                  <input id="search" type="search" required>
+                  <label for="search"><i class="material-icons">search</i></label>
+
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input value="Adrián" id="nombre(s)" type="text" class="validate">
+                      <label for="nombre">Nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input value="Rojas" id="apellidos" type="text" class="validate">
+                      <label for="apellidos">Apellidos</label>
+                    </div>
+                  </div>  
+                </div>
+
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input value="11:28" id="nombre(s)" type="text" class="validate">
+                      <label for="nombre">Hora de entrada</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input value="" id="apellidos" type="text" class="validate">
+                      <label for="apellidos">Hora de Salida</label>
+                    </div>
+                    <br>
+               
+              </form>
+            </div>
           </div>
+        </div>
             
           
           <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cancelar</a>
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Iniciar registro</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Registro</a>
             
           </div>
         </div>
