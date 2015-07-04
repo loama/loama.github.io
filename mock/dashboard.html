@@ -36,13 +36,14 @@
               <ul class="right hide-on-med-and-down">
                 
                 <li><a href="eventos.html" >Eventos</a></li>
-                <li><a href="usuarios.html">Partners</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
                 <li><a href="usuarios.html">Usuarios</a></li>
                 <li><a class="dropdown-button" data-beloworigin="true" href="#!" data-activates="dropdown1">Otros <i class="material-icons ">arrow_drop_down</i></a></li>
               </ul>
 
               <ul id="nav-mobile" class="side-nav">
                 <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
                 <li><a href="usuarios.html">Usuarios</a></li>
                 <ul>
                   <li><a href="miembros.html">Reportes</a></li>
@@ -65,15 +66,26 @@
           </div>
         </div> 
 
-        <div class="fixed-action-btn" style="top: 160px; left: 24px;">
-          <a href="#modalag" class="btn-floating btn-large waves-effect waves-light red modal-trigger"><i class="material-icons">add</i></a>
-        </div>
-        <div class="fixed-action-btn" style="top: 240px; left: 24px;">
-          <a href="#modalin" class="btn-floating btn-large waves-effect waves-light red modal-trigger"><i class="material-icons">perm_identity</i></a>
-        </div>
+        
+                  
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <a class="btn-floating btn-large red">
+              <i class="material-icons">add</i>
+            </a>
+            <ul>
+              <li><a class="btn-floating red"><i class="material-icons">today</i></i></a></li>
+              <li><a href="newcliententerprise.html" class="btn-floating yellow darken-1"><i class="material-icons">person_pin</i></a></li>
+              <li><a class="btn-floating green"><i class="material-icons">supervisor_account</i></a></li>
+              <li><a class="btn-floating blue"><i class="material-icons">perm_contact_calendar</i></a></li>
+            </ul>
+          
+        </div>  
 
-       <iframe src="dashboard2.html" width="100%" height="1200px" scrolling="no" frameborder="0"></iframe> 
+        <br>
 
+       
+        <iframe src="dashboard2.html" width="95%" height="1200px" scrolling="no" frameborder="0"></iframe> 
+       
       
         
         
@@ -82,18 +94,17 @@
           <div class="modal-content">
             <div class="input-field col s12">
               <select>
-                <option value="" disabled selected>Partner</option>
+                <option value="" disabled selected>Nuevo Cliente</option>
                 <option value="1">Uber</option>
                 <option value="2">Google</option>
                 <option value="3">Centraal</option>
               </select>
-              <label>Escoger partner</label>
+              <label>Escoger cliente</label>
             </div>
             
           </div>
           <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Cancelar</a>
-            <a href="partner.html" class="modal-action modal-close waves-effect waves-red btn-flat ">Nuevo Partner</a>
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Crear</a>
             
           </div>
