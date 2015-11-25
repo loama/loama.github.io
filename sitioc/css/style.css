@@ -1,0 +1,101 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 560px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: auto 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.parallaximg {
+  filter: brightness(0%) grayscale(1);
+}
+
+.home-vid {
+  z-index: 1005;
+  width: 100%;
+}
+
+.topimage {
+  height: 400px;
+  width: 100%;
+}
+
+.top-image {
+  -webkit-filter: grayscale(1) brightness(0.5);
+  filter: grayscale(1) brightness(0.5);
+}
+
+.navbar-fixed {
+  position: fixed;
+}
+
+.top-nav:hover {
+  color: #d50000;
+}
+
+.top-nav {
+  color: #fff;
+}
+
+.topicon{
+  padding: 10px;
+}
+
+.top-navactive {
+  color: #d50000 ;
+}
+
+.card-title {
+  text-align: center;
+}
+
