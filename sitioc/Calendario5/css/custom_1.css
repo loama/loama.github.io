@@ -197,10 +197,8 @@ body {
 }
 
 .fc-calendar .fc-row > div {
-	
 	border: 1px solid rgba(204,204,204, 0.5);
 	padding: 10px;
-	cursor: pointer;
 }
 
 .fc-calendar .fc-row > div:first-child{
@@ -236,9 +234,11 @@ body {
 .fc-calendar .fc-row > div > div span {
 	color: rgba(255,255,255,1);
 	font-size: 16px;
+	box-shadow: 0 0 0.2em grey;
 	display: inline-block;
 	padding: 3px 5px;
 	border-radius: 2px;
+	cursor: pointer;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -247,9 +247,9 @@ body {
 	background: #039be5;
 }
 
-.no-touch .fc-calendar .fc-row > div > div a:hover {
+.fc-calendar .fc-row > div > div span:hover {
+	box-shadow: 0 0 0.8em grey;
 	color: rgba (0,0,0,0.7);
-	background: #0288d1;
 }
 
 @media screen and (max-width: 880px) , screen and (max-height: 450px) {

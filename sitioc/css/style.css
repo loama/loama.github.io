@@ -99,3 +99,20 @@ footer.page-footer {
   text-align: center;
 }
 
+.row .col.lmember {
+        width: 20%;
+        margin-left: 0; }
+
+.card .card-action {
+  text-align: center;
+}
+
+.card .card-action a {
+  margin-right: 0;
+  color: #8bc34a;
+  text-transform: none;
+}        
+
+.card .card-action a:hover {
+  color: #8bc34a;
+}        
