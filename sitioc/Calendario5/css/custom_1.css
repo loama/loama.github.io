@@ -244,7 +244,46 @@ body {
 	text-overflow: ellipsis;
 	max-width: 100%;
 	margin-bottom: 1px;
-	background: #039be5;
+}
+
+.red-event {
+	background: #f44336;
+}
+
+.pink-event {
+	background: #e91e63;
+}
+
+.purple-event {
+	background: #9c27b0;
+}
+
+.lime-event {
+	background: #cddc39;
+}
+
+.orange-event {
+	background: #ff9800;
+}
+
+.yellow-event {
+	background: #ffc107;
+}
+
+.indigo-event {
+	background: #3f51b5;
+}
+
+.green-event {
+	background: #4caf50;
+}
+
+.grey-event {
+	background: #9e9e9e;
+}
+
+.black-event {
+	background: #000000;
 }
 
 .fc-calendar .fc-row > div > div span:hover {

@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>Centraal | Espacios de trabajo innovadores</title>
+  <title>centraal | coworking</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,34 +16,29 @@
   <!-- navigation -->
   <nav class="white navbar-fixed" role="navigation">
     <div class="nav-wrapper container"> 
-	     
-	      <a id="logo-container" href="index.html" class="brand-logo"><img src="images/logo/LOGO_centraal2.png" style="height: 60px; vertical-align: middle"></a> 
-	      
-	      <ul class="right hide-on-med-and-down" style="margin-right: auto; margin-left: auto;">
-	        <li class="active"><a href="coworking.html">coworking</a></li>
-	        <li><a href="oficinas.html">oficinas privadas</a></li>
-	        <li><a href="eventos.html">eventos</a></li>
-	        <li><a href="comunidad.html">comunidad</a></li>
-	        <li><a href="#contacto">contacto</a></li>
-	      </ul>
+        
+        <a id="logo-container" href="index.html" class="brand-logo"><img src="images/logo/LOGO_centraal2.png" style="height: 60px; vertical-align: middle"></a> 
+        
+        <ul class="right hide-on-med-and-down" style="margin-right: auto; margin-left: auto;">
+          <li class="active"><a href="coworking.html">coworking</a></li>
+          <li><a href="oficinas.html">oficinas privadas</a></li>
+          <li><a href="eventos.html">eventos</a></li>
+          <li><a href="comunidad.html">comunidad</a></li>
+        </ul>
 
-	      <ul id="nav-mobile" class="side-nav">
-	        <li class="active"><a href="coworking.html">coworking</a></li>
-	        <li><a href="oficinas.html">oficinas privadas</a></li>
-	        <li><a href="eventos.html">eventos</a></li>
-	        <li><a href="comunidad.html">comunidad</a></li>
-	        <li><a href="#contacto">contacto</a></li>
-	      </ul>
-
-	      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons" style="color: #000">menu</i></a>
-    </div>
-    <div style="width: 30%">
+        <ul id="nav-mobile" class="side-nav">
+          <li class="active"><a href="coworking.html">coworking</a></li>
+          <li><a href="oficinas.html">oficinas privadas</a></li>
+          <li><a href="eventos.html">eventos</a></li>
+          <li><a href="comunidad.html">comunidad</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons" style="color: #000">menu</i></a>
     </div>
   </nav>
 
   <!-- end navigation -->
 
- <div class="slider topimage" style="z-index: 1000;">
+  <div class="slider topimage" style="z-index: 1000;">
     <ul class="slides">
       <li>
         <img src="images/header/espacios2015-9.jpg" class="top-image"> <!-- random image -->
@@ -65,13 +60,16 @@
           	  	<a class="waves-effect waves-gray btn-flat top-nav topicon" href="http://youtube.com/centraal"> <i class="fa fa-youtube-play"></i> </a>
           	  	<a class="waves-effect waves-gray btn-flat top-nav topicon" href="https://plus.google.com/+Centraal/about"> <i class="fa fa-google-plus"></i> </a>
           	  </div>
-	        </div>
-          
+	        </div>          
         </div>
-
       </li>
-
     </ul>
+  </div>
+
+  <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a class="btn-floating btn-large red modal-trigger" href="#contacto">
+      <i class="large material-icons">mail_outline</i>
+    </a>
   </div>
 
   <div class="container">
@@ -373,7 +371,7 @@
 
       </div>
 
-  	<footer class="page-footer grey darken-2">
+  <footer class="page-footer grey darken-2">
     <div class="container" style="width: 90%">
       <div class="row">
         
@@ -390,13 +388,20 @@
          </ul> 
         </div>
         
-        <div class="col l5 s5" style="text-align: center">
-          <h5 class="white-text">Links</h5>
+        <div class="col l3 s3" style="text-align: center">
           <ul>
             <li><a class="grey-text text-lighten-3" href="#!">Acerca de</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Preguntas frecuentes</a></li>
+            <li><a class="grey-text text-lighten-3 modal-trigger" href="#faq">Preguntas frecuentes</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l2 s2" style="text-align: right">
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">musafest</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">cinema centraal</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">bazar de barrio</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">revista</a></li>
           </ul>
         </div>
         
@@ -412,6 +417,7 @@
       <a class="red-text text-darken-1 right modal-trigger" href="#avisodeprivacidad">Aviso de Privacidad</a>
       </div>
     </div>
+  </footer>
 
   <!-- Modal Structure -->
   <div id="avisodeprivacidad" class="modal">
@@ -436,6 +442,59 @@
 
     </div>
     <iframe src="avisodeprivacidad.html" style="background-color: transparent; width: 100%" scrolling="no" frameborder="0"></iframe>
+  </div>
+
+  <div id="faq" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12">
+          <ul class="tabs">
+            <li class="tab col s3"><a href="#faqcoworking">coworking</a></li>
+            <li class="tab col s3"><a class="active" href="#faqoficinas">oficinas privadas</a></li>
+            <li class="tab col s3"><a href="#faqeventos">eventos</a></li>
+            <li class="tab col s3"><a href="#faqcomunidad">comunidad</a></li>
+          </ul>
+        </div>
+        <div id="faqcoworking" class="col s12">
+          
+        </div>
+        <div id="faqoficinas" class="col s12">
+          <p><b>¿qué incluye la renta del espacio?</b><p>
+          <p>acceso a tu propia oficina privada en centraal, con todos los servicios como internet, mobiliario y papelería además de tener acceso a los espacios abiertos de centraal.</p>
+           
+          <p><b>¿cuentan con estacionamiento o servicio de Valet Parking?</b></p>
+          <p>no contamos con estacionamiento para eventos de escala mediana-grande; sin embargo, existen distintas opciones cerca de centraal. De así desearlo, te podemos ofrecer servicio de valet parking para tus invitados.</p>
+           
+          <p><b>¿cuáles son las características de internet?</b></p>
+          <p>contamos con internet dedicado de 50 mbps, conexión inalámbrica y múltiples puntos para que te conectes con cable.</p>
+           
+          <p><b>¿qué tamaño y para cuántas personas son las oficinas?</b></p>
+          el tamaño del espacio varía de acuerdo a la cantidad de personas que requieras, pero podemos adecuar privados para equipos pequeños (1/2 personas) y para equipos muy grandes.
+           
+          <p><b>¿qué costo tiene?</b></p>
+          los costos varían dependiendo del espacio y la cantidad de personas, contáctanos para verificar la disponibilidad de espacios, cuéntanos tus necesidades y con gusto te preparamos una cotización.
+           
+          <p><b>¿cuál es el horarios de funcionamiento?</b></p>
+          el acceso a tu oficina privada es 24 horas 7 días a la semana, nuestro horario de soporte en recepción es de 8 am a 8 pm de lunes a viernes.
+           
+          <p><b>¿cuánto tiempo duran con los contratos?</b></p>
+          los periodos de contratación de los espacios privados son a partir de 6 meses.
+           
+          <p><b>¿qué necesito para contratar?</b></p>
+          datos básicos y documentos legales de la empresa contratante: acta constitutiva, identificación oficial y rfc de la empresa.</p>
+        </div>
+        <div id="faqeventos" class="col s12">
+          
+        </div>
+        <div id="faqcomunidad" class="col s12">
+          
+        </div>
+      </div>
+  </div>
+
+  <div id="contacto" class="modal">
+    <div class="modal-content">
+      <iframe src="form.html" width="100%" height="350px" frameborder="0" scrolling="no" ="no" marginheight="0" marginwidth="0"></iframe>
   </div>
   <!-- end modals -->
 
