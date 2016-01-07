@@ -116,3 +116,8 @@ footer.page-footer {
 .card .card-action a:hover {
   color: #8bc34a;
 }        
+
+.parallax-container {
+  min-height: 300px;
+  height: 300px;
+}
