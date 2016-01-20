@@ -123,3 +123,11 @@ footer.page-footer {
   min-height: 300px;
   height: 300px;
 }
+
+.home-nav {
+  text-transform: none;
+}
+
+.picker__frame {
+  position: relative;
+}
