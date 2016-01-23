@@ -32,7 +32,7 @@ p {
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
-    top: 40%;
+    top: 10%;
   }
   #index-banner .section {
     top: 10%;
@@ -130,4 +130,31 @@ footer.page-footer {
 
 .picker__frame {
   position: relative;
+}
+
+.spacesicons {
+  line-height: 3em;
+  vertical-align: middle;
+}
+
+.spacesiconsimages {
+  width: 3em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icondivs {
+  margin-top: 1em;
+}
+
+.grid-item {
+  width: 200px; 
+}
+
+.grid-item--width2 { 
+  width: 400px; 
+}
+
+.masonry {
+  width: 95%;
 }
