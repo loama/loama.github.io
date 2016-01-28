@@ -145,6 +145,7 @@ footer.page-footer {
 
 .icondivs {
   margin-top: 1em;
+  font-size: 0.7em;
 }
 
 .grid-item {
@@ -156,7 +157,8 @@ footer.page-footer {
 }
 
 .masonry {
-  width: 95%;
+  width: calc(100% - 10px);
+  margin-right: 10px;
 }
 
 .pattern {
