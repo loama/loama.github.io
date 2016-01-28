@@ -162,7 +162,7 @@ footer.page-footer {
 }
 
 .pattern {
-  background-image: url("videobackground/images/pattern.png");
+  background-image: url("../images/pattern.png");
   background-repeat: repeat;
   background-attachment: scroll;
   width: 100%;
