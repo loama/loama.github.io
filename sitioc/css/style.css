@@ -190,3 +190,9 @@ footer.page-footer {
 .logos-testimonios {
   height: 1em;
 }
+
+@font-face {
+  font-family: "akzidenz";
+  src: url("../font/akzidenz-grotesk-light.eot") format("embedded-opentype"), url("../font/akzidenz-grotesk-light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
