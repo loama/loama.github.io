@@ -195,4 +195,15 @@ footer.page-footer {
   font-family: "akzidenz";
   src: url("../font/akzidenz-grotesk-light.eot") format("embedded-opentype"), url("../font/akzidenz-grotesk-light.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal; 
+}
+
+.terminos {
+  font-size: 0.6em;
+  line-height: 0.3em;
+}
+
+.espacios-caracteristicas {
+  line-height: 1.4em;
+}
+
