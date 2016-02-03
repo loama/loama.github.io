@@ -7,7 +7,7 @@
     $(function() {
 
 
-   var people = [];
+   var news = [];
 
    $.getJSON('news.json', function(data) {
        $.each(data.person, function(i, f) {
@@ -25,18 +25,18 @@
 <body>
 
 <div class="wrapper">
-<div class="profile">
-   <table id= "newsdata" border="2">
-  <thead>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email Address</th>
-            <th>City</th>
-        </thead>
+  <div class="profile">
+    <table id= "newsdata" border="2">
+      <thead>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+        <th>City</th>
+      </thead>
       <tbody>
 
-       </tbody>
-   </table>
+      </tbody>
+     </table>
 
 </div>
 </div>
