@@ -24,7 +24,7 @@
 
      $.getJSON('news.json', function(data) {
          $.each(data.news, function(i, f) {
-            var tblRow = "<li>" + "<div class='collapsible-header'>" + f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstname + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
+            var tblRow = "<li>" + "<div class='collapsible-header'>" + f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstName + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
              $(tblRow).appendTo("#newsdata");
        });
 
