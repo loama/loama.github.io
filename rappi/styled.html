@@ -11,6 +11,7 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
   <link href="css/animation.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="animate.css">
 
 
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -22,7 +23,7 @@
 
      var news = [];
 
-     $.getJSON('news.json', function(data) {
+     $.getJSON('http://centraal.com/api/people.json', function(data) {
          $.each(data, function(i, f) {
             var tblRow = "<li>" + "<div class='collapsible-header'>" + f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstName + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
              $(tblRow).appendTo("#newsdata");
@@ -62,8 +63,8 @@
     </div>
   </div>
 
-
-  <div class="container animation-target">
+  <h1 ></h1>
+  <div class="container animated bounceInUp">
     <div class="section">
 
       <!--   Icon Section   -->
@@ -143,7 +144,6 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script src="animate-it/js/css3-animate-it.js"></script>
 
   </body>
 </html>
