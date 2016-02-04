@@ -24,9 +24,8 @@
 
      $.getJSON('news.json', function(data) {
          $.each(data.news, function(i, f) {
-            var tblRow = "<tr>" + "<td>" + f.firstName + "</td>" +
-             "<td>" + f.lastName + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>"
-             $(tblRow).appendTo("#newsdata tbody");
+            var tblRow = "<li>" + "<div class='collapsible-header'>" + f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstname + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
+             $(tblRow).appendTo("#newsdata");
        });
 
      });
@@ -74,7 +73,7 @@
         </div>
       
         <div class="col s12 m4">
-          <ul class="collapsible" data-collapsible="accordion">
+          <ul class="collapsible" data-collapsible="accordion" id="newsdata">
             <li>
               <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
               <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
