@@ -207,3 +207,28 @@ footer.page-footer {
   line-height: 1.4em;
 }
 
+.btn {
+  z-index: 10000;
+}
+
+.fixed-action-btn {
+  z-index: 10000;
+}
+
+.accionbtn {
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.3em;
+  font-size: 2rem;
+
+}
+
+.acciontxt {
+  line-height: 0px;
+  font-size: .28em;
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+}
+

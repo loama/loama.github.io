@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
@@ -9,8 +9,6 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
-  <link href="css/animation.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" type="text/css" href="animate.css">
 
 
@@ -18,20 +16,18 @@
 
   <script>
 
-      $(function() {
+    $(function() {
 
 
      var news = [];
 
-     $.getJSON('http://centraal.com/api/people.json', function(data) {
-         $.each(data, function(i, f) {
-            var tblRow = "<li>" + "<div class='collapsible-header'>" + f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstName + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
-             $(tblRow).appendTo("#newsdata");
-       });
-
-     });
-
-  });
+      $.getJSON('http://centraal.com/api/people.json', function(data) {
+          $.each(data, function(i, f) {
+            var tblRow = "<li>" + "<div class='collapsible-header' onclick='titleFunction(this.innerHTML)'>"+ f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstName + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
+            $(tblRow).appendTo("#newsdata");
+          });
+      });
+    });
   </script>
 
 </head>
@@ -64,37 +60,43 @@
   </div>
 
   <h1 ></h1>
-  <div class="container animated bounceInUp">
+  <div class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          
-        </div>
       
-        <div class="col s12 m4">
-          <ul class="collapsible" data-collapsible="accordion" id="newsdata">
-            <li>
-              <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-            <li>
-              <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-              <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-            </li>
-          </ul>
-        </div>
 
-        <div class="col s12 m4">
-          
-        </div>
+  <nav class="animated bounceInUp" style="background-color:#f44336; border-radius:0.5em 0.5em 0 0; z-index:100">
+    <div class="nav-wrapper">
+      <a href="#" class="button brand-logo left"><i class="button material-icons">view_headline</i></a>
+      <p class="center" id="newstitle"></p>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+      
+      </ul>
+    </div>
+  </nav>
+      <!--   Icon Section   -->
+    <div class="animated bounceInUp newslist">  
+      <div class="newsdiv ocult">
+
+          <div style="padding: 10px 10% 10px 10%; width: 100%;">
+            <ul class="collapsible" data-collapsible="accordion" id="newsdata" style="background-color:#fff">
+              <li>
+                <div class="collapsible-header" onclick="titleFunction(this.innerHTML)"><p id="titulo">First</p></div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header" onclick="titleFunction(this.innerHTML)">Second</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header">Third</div>
+                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+              </li>
+            </ul>
+          </div>
       </div>
-
+  
+      </div>
+    </div>
     </div>
     <br><br>
     
@@ -104,34 +106,7 @@
   </div>
 
   <footer class="page-footer orange">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  
     <div class="footer-copyright">
       <div class="container">
       Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
@@ -141,7 +116,47 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+
+      var animationName = 'animated bounceInLeft'
+      var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+      var ocult = 'ocult'
+      
+      $('a.button').on('click' ,function() {
+        $ ('div.newsdiv').addClass(animationName).removeClass(ocult).one(animationend,function() {
+          //$(this).removeClass(animationName);       
+        });
+
+      });
+
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(function() {
+
+      var animationName = 'animated bounceInLeft'
+      var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
+      var ocult = 'ocult'
+      
+      $('a.button').on('click' ,function() {
+        $ ('div.newsdiv').addClass(animationName).removeClass(ocult).one(animationend,function() {
+          //$(this).removeClass(animationName);       
+        });
+
+      });
+
+    });
+  </script>
+
+  <script>
+    function titleFunction(newsname)
+      {
+        document.getElementById("newstitle").innerHTML = newsname;
+      }
+  </script>
+  
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
