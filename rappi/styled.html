@@ -16,18 +16,17 @@
 
   <script>
 
-    $(function() {
-
 
      var news = [];
 
       $.getJSON('http://centraal.com/api/people.json', function(data) {
           $.each(data, function(i, f) {
-            var tblRow = "<li>" + "<div class='collapsible-header' onclick='titleFunction(this.innerHTML)'>"+ f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstName + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
+            var tblRow = "<li>" + "<div class='collapsible-header newfromjson' onclick='titleFunction(this.innerHTML)'>"+ f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstName + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
             $(tblRow).appendTo("#newsdata");
           });
       });
-    });
+  
+
   </script>
 
 </head>
@@ -44,25 +43,23 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
-      <br><br>
-      <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+  <div style="width:30%">
+      <div class="card grey lighten-2">
+            <div class="card-content white-text">
+              <div class="row">
+                <form id="form" onsubmit="return false;">
+                  <input type="text" id="userInput" />
+                  <input class="refreshjson" type="submit"/>
+                </form>
+              </div>
+            </div>
       </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
-
-    </div>
-  </div>
-
-  <h1 ></h1>
+  </div>              
+ 
   <div class="container">
     <div class="section">
       
+  <a class="waves-effect waves-light btn boton">ir</a>
 
   <nav class="animated bounceInUp" style="background-color:#f44336; border-radius:0.5em 0.5em 0 0; z-index:100">
     <div class="nav-wrapper">
@@ -73,14 +70,16 @@
       </ul>
     </div>
   </nav>
+
+
       <!--   Icon Section   -->
     <div class="animated bounceInUp newslist">  
       <div class="newsdiv ocult">
 
           <div style="padding: 10px 10% 10px 10%; width: 100%;">
-            <ul class="collapsible" data-collapsible="accordion" id="newsdata" style="background-color:#fff">
+            <ul class="collapsible toempty" data-collapsible="accordion" id="newsdata" style="background-color:#fff">
               <li>
-                <div class="collapsible-header" onclick="titleFunction(this.innerHTML)"><p id="titulo">First</p></div>
+                <div class="collapsible-header" onclick="titleFunction(this.innerHTML)">First</div>
                 <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
               </li>
               <li>
@@ -98,24 +97,9 @@
       </div>
     </div>
     </div>
-    <br><br>
-    
-    <div class="section">
-
-    </div>
-  </div>
-
-  <footer class="page-footer orange">
-  
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
-  </footer>
 
 
-  <!--  Scripts-->
+  <!-- Scripts -->
   <script type="text/javascript">
     $(function() {
 
@@ -132,29 +116,42 @@
 
     });
   </script>
-
+  <!-- function NOT WORKING to ocult the news title in news navbar -->
   <script type="text/javascript">
-    $(function() {
-
-      var animationName = 'animated bounceInLeft'
-      var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
-      var ocult = 'ocult'
-      
-      $('a.button').on('click' ,function() {
-        $ ('div.newsdiv').addClass(animationName).removeClass(ocult).one(animationend,function() {
-          //$(this).removeClass(animationName);       
-        });
-
-      });
-
+    $('div.newfromjson').click(function() {
+      var clicks = $(this).data('clicks');
+      if (clicks) {
+        alert('odd number of clicks');
+      } else {
+        alert('even number of clicks');
+      }
+      $(this).data("clicks", !clicks);
     });
   </script>
-
+  <!-- function to change the title in news navbar -->
   <script>
     function titleFunction(newsname)
       {
         document.getElementById("newstitle").innerHTML = newsname;
       }
+  </script>
+  
+  <!-- function to change the json-->
+  <script>
+
+        
+    $("input.refreshjson").click(function(){
+      var jsoninput = document.getElementById("userInput").value;
+      $("ul.toempty").empty();
+
+      $.getJSON(jsoninput, function(data) {
+          $.each(data, function(i, f) {
+            var tblRow = "<li>" + "<div class='collapsible-header' onclick='titleFunction(this.innerHTML)'>"+ f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstName + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
+            $(tblRow).appendTo("#newsdata");     
+        });
+      });
+    });
+      
   </script>
   
   <script src="js/materialize.js"></script>
