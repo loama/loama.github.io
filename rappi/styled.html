@@ -19,16 +19,15 @@
 
      var news = [];
 
-      $.getJSON('http://centraal.com/api/people.json', function(data) {
+      $.getJSON('http://centraal.com/api/news_mock.json', function(data) {
           $.each(data, function(i, f) {
-            var tblRow = "<li>" + "<div class='collapsible-header newfromjson' onclick='titleFunction(this.innerHTML)'>"+ f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstName + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
+            var tblRow = "<li>" + "<div class='collapsible-header newfromjson' id='newfromjson' onclick='titleFunction(this.innerHTML)'>"+ f.title + "</div>" + "<div class='collapsible-body'>" + "<p class='animated pulse'>" + f.title + f.content + "<img src="+ f.image + ">" + "</p>" + "</div>" + "</li>"
             $(tblRow).appendTo("#newsdata");
           });
       });
   
 
   </script>
-
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
@@ -43,28 +42,37 @@
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div style="width:30%">
-      <div class="card grey lighten-2">
-            <div class="card-content white-text">
+  <div class="row">
+  <div class="col l9 s1"> &nbsp</div>
+  <div class="col l3 s11">
+      <div class="card white lighten-2">
+            <div class="card-for-json card-content ">
               <div class="row">
                 <form id="form" onsubmit="return false;">
-                  <input type="text" id="userInput" />
-                  <input class="refreshjson" type="submit"/>
+                  <div class="input-field col s9">  
+                    <i class="material-icons prefix" style="margin-top:0.3em">language</i>
+                    <input type="text" id="userInput" />
+                    <label for="userInput">url del nuevo json</label>
+                  </div>
+                  <div class="input-field col s3">  
+                    <input class="waves-button-input waves-light btn refreshjson jsonbtn" id="enviar" type="submit" value="enviar" style="margin-top:0.9em" />
+                    
+                  </div>  
                 </form>
               </div>
             </div>
       </div>
   </div>              
- 
+ </div>
   <div class="container">
     <div class="section">
       
-  <a class="waves-effect waves-light btn boton">ir</a>
+  <a class="waves-effect waves-light btn boton" type="submit">ir</a>
 
-  <nav class="animated bounceInUp" style="background-color:#f44336; border-radius:0.5em 0.5em 0 0; z-index:100">
+  <nav class="initial-appear ocult" style="background-color:#f44336; border-radius:0.5em 0.5em 0 0; z-index:100">
     <div class="nav-wrapper">
       <a href="#" class="button brand-logo left"><i class="button material-icons">view_headline</i></a>
-      <p class="center" id="newstitle"></p>
+      <p class="center newstitle" id="newstitle"></p>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
       
       </ul>
@@ -73,23 +81,11 @@
 
 
       <!--   Icon Section   -->
-    <div class="animated bounceInUp newslist">  
+    <div class="initial-appear ocult newslist">  
       <div class="newsdiv ocult">
 
           <div style="padding: 10px 10% 10px 10%; width: 100%;">
             <ul class="collapsible toempty" data-collapsible="accordion" id="newsdata" style="background-color:#fff">
-              <li>
-                <div class="collapsible-header" onclick="titleFunction(this.innerHTML)">First</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-              </li>
-              <li>
-                <div class="collapsible-header" onclick="titleFunction(this.innerHTML)">Second</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-              </li>
-              <li>
-                <div class="collapsible-header">Third</div>
-                <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-              </li>
             </ul>
           </div>
       </div>
@@ -98,61 +94,34 @@
     </div>
     </div>
 
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2014 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
 
   <!-- Scripts -->
-  <script type="text/javascript">
-    $(function() {
-
-      var animationName = 'animated bounceInLeft'
-      var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
-      var ocult = 'ocult'
-      
-      $('a.button').on('click' ,function() {
-        $ ('div.newsdiv').addClass(animationName).removeClass(ocult).one(animationend,function() {
-          //$(this).removeClass(animationName);       
-        });
-
-      });
-
-    });
-  </script>
-  <!-- function NOT WORKING to ocult the news title in news navbar -->
-  <script type="text/javascript">
-    $('div.newfromjson').click(function() {
-      var clicks = $(this).data('clicks');
-      if (clicks) {
-        alert('odd number of clicks');
-      } else {
-        alert('even number of clicks');
-      }
-      $(this).data("clicks", !clicks);
-    });
-  </script>
-  <!-- function to change the title in news navbar -->
-  <script>
-    function titleFunction(newsname)
-      {
-        document.getElementById("newstitle").innerHTML = newsname;
-      }
-  </script>
-  
-  <!-- function to change the json-->
-  <script>
-
-        
-    $("input.refreshjson").click(function(){
-      var jsoninput = document.getElementById("userInput").value;
-      $("ul.toempty").empty();
-
-      $.getJSON(jsoninput, function(data) {
-          $.each(data, function(i, f) {
-            var tblRow = "<li>" + "<div class='collapsible-header' onclick='titleFunction(this.innerHTML)'>"+ f.firstName + "</div>" + "<div class='collapsible-body'>" + "<p>" + f.firstName + f.lastName + f.job + f.roll + "</p>" + "</div>" + "</li>"
-            $(tblRow).appendTo("#newsdata");     
-        });
-      });
-    });
-      
-  </script>
+  <script src="js/style.js"></script>
   
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
