@@ -20,9 +20,7 @@
 
       $.getJSON('http://centraal.com/api/news_mock.json', function(data) {
           $.each(data, function(i, f) {
-            var tblRow = "<li>" + "<div class='collapsible-header newfromjson' id='newfromjson' onclick='titleFunction(this.innerText)'>" + "<img src="+ f.image + " class='hide-on-med-and-up' style='width:100%'>" + f.title + "</div>" + 
-            "<div class='collapsible-body'>" + "<div class='row'>" +"<div class='col s2 m4 l4 no-pad'>" + "<img src="+ f.image + " class='hide-on-small-only newsimage'>" + "</div>" + "<div class='col s10 m8 l8'>"
-             +  "<p class='animated pulse'>" + f.title + "<br>" + f.content + "</p>" + "</div>" + "</div>" + "</li>"
+            var tblRow = "<li>" + "<div class='collapsible-header newfromjson' id='newfromjson' onclick='titleFunction(this.innerText)'>" + "<img src="+ f.image + " class='hide-on-med-and-up newsimagemob'>" + f.title + "</div>" + "<div class='collapsible-body'>" + "<div class='row'>" +"<div class='col s2 m4 l4 no-pad'>" + "<img src="+ f.image + " class='hide-on-small-only newsimage'>" + "</div>" + "<div class='col s10 m8 l8'>" +  "<p class='animated pulse'>" + f.title + "<br>" + f.content + "</p>" + "</div>" + "</div>" + "</li>"
             $(tblRow).appendTo("#newsdata");
           });
       });
@@ -33,7 +31,7 @@
 </head>
 <body>
   <div id="contenedor">
-  <a class="waves-effect waves-light btn jsonopenbtn"><i class="material-icons left jsonchangeicon">play_arrow</i>cambiar json</a>
+  <a class="waves-effect waves-light btn cero-opacity jsonopenbtn"><i class="material-icons left jsonchangeicon">play_arrow</i>cambiar json</a>
   
   <nav class="blue-grey darken-2 fixed-navbar" role="navigation">
     <div class="nav-wrapper container" style="margin-top:-0.9em"><a id="logo-container" href="#" class="brand-logo"><img src="images/Retina.png" style="max-height:56px; padding-top:0.25em"></a>

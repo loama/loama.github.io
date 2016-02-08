@@ -127,6 +127,14 @@ nav.newstitles {
 	padding: 10px 0 0 20px;
 }
 
+.newsimagemob {
+	width: calc(100% + 2em);
+	margin: 0 -1em 0 -1em;
+}
+
+.collapsible-header {
+	line-height: 2em;
+}
 .newfromjson {
 	padding: 0 1em;
 }

@@ -10,9 +10,12 @@ $( document ).ready(function() {
     
     setTimeout(function() { 
       var animationName = 'animated bounceInUp'
+      var animationName1 = 'animated bounceInRight'
       var ocult = 'ocult'
+      var ceroopacity = 'cero-opacity'
       $('nav.initial-appear').addClass(animationName).removeClass(ocult);
-      $('div.initial-appear').addClass(animationName).removeClass(ocult);  
+      $('a.jsonopenbtn').removeClass(ceroopacity);
+      $('div.initial-appear').addClass(animationName).removeClass(ocult); 
     }, 500);
   });
 
@@ -23,9 +26,10 @@ $(function() {
   var animationName2 = 'animated bounceOutRight'
   var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
   var ocult = 'ocult'
+  var ceroopacity = 'cero-opacity'
   
   $('a.button').on('click' ,function() {
-    $ ('ul.news-collap').addClass(animationName).removeClass(cero-opacity).one(animationend,function() {
+    $ ('ul.news-collap').addClass(animationName).removeClass(ceroopacity).one(animationend,function() {
       //$(this).removeClass(animationName);       
     });
 
