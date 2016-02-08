@@ -25,7 +25,7 @@ $(function() {
   var ocult = 'ocult'
   
   $('a.button').on('click' ,function() {
-    $ ('div.newsdiv').addClass(animationName).removeClass(ocult).one(animationend,function() {
+    $ ('ul.news-collap').addClass(animationName).removeClass(cero-opacity).one(animationend,function() {
       //$(this).removeClass(animationName);       
     });
 

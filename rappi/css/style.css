@@ -13,8 +13,7 @@
 }
 
 .ocult {
-	opacity: 0;
-	margin-right: -10000px;
+	display: none;
 }
 
 .newslist {
@@ -119,6 +118,19 @@ nav.newstitles {
 	min-height: 56px;
 }
 
+.cero-opacity {
+	opacity: 0;
+}
+
+.newsimage {
+	width:100%;
+	padding: 10px 0 0 20px;
+}
+
 .newfromjson {
+	padding: 0 1em;
+}
+
+.no-pad {
 	padding: 0;
 }
