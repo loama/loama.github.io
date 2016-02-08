@@ -3,14 +3,14 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Prueba Front-End tecnologías rappi</title>
+  <title>Prueba Front-End Rappi</title>
 
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" type="text/css" href="animate.css">
-
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
   <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 
@@ -20,7 +20,7 @@
 
       $.getJSON('http://centraal.com/api/news_mock.json', function(data) {
           $.each(data, function(i, f) {
-            var tblRow = "<li>" + "<div class='collapsible-header newfromjson' id='newfromjson' onclick='titleFunction(this.innerText)'>" + "<img src="+ f.image + " class='hide-on-med-and-up newsimagemob'>" + f.title + "</div>" + "<div class='collapsible-body'>" + "<div class='row'>" +"<div class='col s2 m4 l4 no-pad'>" + "<img src="+ f.image + " class='hide-on-small-only newsimage'>" + "</div>" + "<div class='col s10 m8 l8'>" +  "<p class='animated pulse'>" + f.title + "<br>" + f.content + "</p>" + "</div>" + "</div>" + "</li>"
+            var tblRow = "<li>" + "<div class='collapsible-header newfromjson' id='newfromjson' onclick='titleFunction(this.innerText)'>" + "<img src="+ f.image + " class='hide-on-med-and-up newsimagemob'>" + f.title + "</div>" + "<div class='collapsible-body'>" + "<div class='row'>" +"<div class='col s0 m4 l4 no-pad'>" + "<img src="+ f.image + " class='hide-on-small-only newsimage'>" + "</div>" + "<div class='col s12 m8 l8'>" +  "<p class='animated pulse'>" + f.content + "</p>" + "</div>" + "</div>" + "</li>"
             $(tblRow).appendTo("#newsdata");
           });
       });
@@ -34,21 +34,16 @@
   <a class="waves-effect waves-light btn cero-opacity jsonopenbtn"><i class="material-icons left jsonchangeicon">play_arrow</i>cambiar json</a>
   
   <nav class="blue-grey darken-2 fixed-navbar" role="navigation">
-    <div class="nav-wrapper container" style="margin-top:-0.9em"><a id="logo-container" href="#" class="brand-logo"><img src="images/Retina.png" style="max-height:56px; padding-top:0.25em"></a>
+    <div class="nav-wrapper container" style="width:70%; left:15%;; position:absolute; top:0"><a id="logo-container" href="#" class="brand-logo"><img src="images/Retina.png" style="max-height:56px;"></a>
       <ul class="center">
-        <h4 class="hide-on-med-and-down">Prueba Front-end</h4>
+        <h4 class="hide-on-med-and-down" style="margin-top:10px">Prueba Front-end</h4>
       </ul>
-      <ul class="left">
-        <h5 class="hide-on-large-only" style="font-size:2rem">Prueba Front-end</h5>
-      </ul>
-      <ul class="right" style="margin-top: -55px;">
+      <ul class="right" style="margin-top: -60px;">
         <li><a href="#">Navbar Link</a></li>
       </ul>
     </div>
   </nav>
-  
-    <div class="jsonrow">
-      
+    <div class="jsonrow">    
       <div class="card white lighten-2 card-json ocult">
             <div class="card-for-json card-content ">
                <i class="material-icons right ocultjson">close</i>
@@ -70,7 +65,7 @@
   </div>
   <div class="container" style="position:relative; z-index:80;">
   <div class="section">
-
+  <h5 class="hide-on-large-only center site_title" style="font-size:2rem; margin-top:80px">Prueba Front-end</h5>
   <nav class="initial-appear ocult newstitles">
     <div class="nav-wrapper">
     <div class="row" style="margin-bottom:0;">

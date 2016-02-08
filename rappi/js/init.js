@@ -12,7 +12,9 @@ $( document ).ready(function() {
       var animationName = 'animated bounceInUp'
       var animationName1 = 'animated bounceInRight'
       var ocult = 'ocult'
+      var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
       var ceroopacity = 'cero-opacity'
+
       $('nav.initial-appear').addClass(animationName).removeClass(ocult);
       $('a.jsonopenbtn').removeClass(ceroopacity);
       $('div.initial-appear').addClass(animationName).removeClass(ocult); 
