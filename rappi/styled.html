@@ -16,65 +16,66 @@
 
   <script>
 
-
      var news = [];
 
       $.getJSON('http://centraal.com/api/news_mock.json', function(data) {
           $.each(data, function(i, f) {
-            var tblRow = "<li>" + "<div class='collapsible-header newfromjson' id='newfromjson' onclick='titleFunction(this.innerHTML)'>"+ f.title + "</div>" + "<div class='collapsible-body'>" + "<p class='animated pulse'>" + f.title + f.content + "<img src="+ f.image + ">" + "</p>" + "</div>" + "</li>"
+            var tblRow = "<li>" + "<div class='collapsible-header newfromjson' id='newfromjson' onclick='titleFunction(this.innerText)'>" + "<img src="+ f.image + " class='hide-on-med-and-up' style='width:100%'>" + f.title + "</div>" + "<div class='collapsible-body'>" + "<p class='animated pulse'>" + f.title + f.content + "<img src="+ f.image + " class='hide-on-small-only' style='width:100%'>" + "</p>" + "</div>" + "</li>"
             $(tblRow).appendTo("#newsdata");
           });
       });
   
 
   </script>
+
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
+  <div id="contenedor">
+  <a class="waves-effect waves-light btn jsonopenbtn"><i class="material-icons left jsonchangeicon">play_arrow</i>cambiar json</a>
+  
+  <nav class="blue-grey darken-2 fixed-navbar" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img src="images/retina.png" style="max-height:56px; padding-top:0.25em"></a>
+      <ul class="right">
         <li><a href="#">Navbar Link</a></li>
       </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <div class="row">
-  <div class="col l9 s1"> &nbsp</div>
-  <div class="col l3 s11">
-      <div class="card white lighten-2">
+  
+    <div class="jsonrow">
+      
+      <div class="card white lighten-2 card-json ocult">
             <div class="card-for-json card-content ">
-              <div class="row">
+               <i class="material-icons right ocultjson">close</i>
+              <div class="row" style="height:120px">
+
                 <form id="form" onsubmit="return false;">
-                  <div class="input-field col s9">  
-                    <i class="material-icons prefix" style="margin-top:0.3em">language</i>
+                  <div class="input-field col s9 valign-middle"> 
+                    <i class="material-icons prefix languageicon">language</i>
                     <input type="text" id="userInput" />
                     <label for="userInput">url del nuevo json</label>
                   </div>
-                  <div class="input-field col s3">  
-                    <input class="waves-button-input waves-light btn refreshjson jsonbtn" id="enviar" type="submit" value="enviar" style="margin-top:0.9em" />
-                    
+                  <div class="input-field col s1 valign-middle">  
+                    <input class="waves-button-input waves-light btn refreshjson jsonbtn" id="enviar" type="submit" value="enviar"/>
                   </div>  
                 </form>
               </div>
             </div>
-      </div>
-  </div>              
- </div>
-  <div class="container">
-    <div class="section">
-      
-  <a class="waves-effect waves-light btn boton" type="submit">ir</a>
+      </div>             
+  </div>
+  <div class="container" style="position:relative; z-index:80;">
+  <div class="section">
 
-  <nav class="initial-appear ocult" style="background-color:#f44336; border-radius:0.5em 0.5em 0 0; z-index:100">
+  <nav class="initial-appear ocult newstitles">
     <div class="nav-wrapper">
-      <a href="#" class="button brand-logo left"><i class="button material-icons">view_headline</i></a>
-      <p class="center newstitle" id="newstitle"></p>
+    <div class="row" style="margin-bottom:0;">
+      <div class="col s2">
+        &nbsp<a href="#" class="button brand-logo left"><i class="button material-icons">view_headline</i></a></div>
+      <div class="col s8">
+        <p class="center newstitle" id="newstitle"></p>
+      </div>
+      <div class="col s2"> &nbsp </div>
+    </div>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-      
       </ul>
     </div>
   </nav>
@@ -93,25 +94,8 @@
       </div>
     </div>
     </div>
-
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
-          <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  </div>
+  <footer class="page-footer grey lighten-2" style="padding:0">
     <div class="footer-copyright">
       <div class="container">
       © 2014 Copyright Text

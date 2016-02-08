@@ -19,6 +19,8 @@ $( document ).ready(function() {
 $(function() {
 
   var animationName = 'animated bounceInLeft'
+  var animationName1 = 'animated bounceInRight'
+  var animationName2 = 'animated bounceOutRight'
   var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
   var ocult = 'ocult'
   
@@ -28,6 +30,18 @@ $(function() {
     });
 
   });
+
+  $('a.jsonopenbtn').on('click' ,function() {
+  	$ ('a.jsonopenbtn').addClass(ocult);
+    $ ('div.card-json').removeClass(animationName2).addClass(animationName1).removeClass(ocult);
+
+  });
+
+  $('i.ocultjson').on('click' ,function() {
+    $ ('div.card-json').removeClass(animationName1).addClass(animationName2).addClass(ocult);
+    $ ('a.jsonopenbtn').removeClass(ocult);
+  });
+
 
 });
 
