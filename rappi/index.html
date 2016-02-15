@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Prueba Front-End Rappi</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel="stylesheet" type="text/css" href="animate.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+  <script>
+
+     var news = [];
+
+      $.getJSON('http://centraal.com/api/news_mock.json', function(data) {
+          $.each(data, function(i, f) {
+            var tblRow = "<li>" + "<div class='collapsible-header newfromjson' id='newfromjson' onclick='titleFunction(this.innerText)'>" + "<img src="+ f.image + " class='hide-on-med-and-up newsimagemob'>" + f.title + "</div>" + "<div class='collapsible-body'>" + "<div class='row' style='margin-bottom:10px'>" +"<div class='col s0 m4 l4 no-pad'>" + "<img src="+ f.image + " class='hide-on-small-only newsimage'>" + "</div>" + "<div class='col s12 m8 l8'>" +  "<p class='animated pulse'>" + f.content + "</p>" + "</div>" + "</div>" + "</li>"
+            $(tblRow).appendTo("#newsdata");
+          });
+      });
+  
+
+  </script>
+
+</head>
+<body>
+  <div id="contenedor">
+  <a class="waves-effect waves-light btn cero-opacity jsonopenbtn"><i class="material-icons left jsonchangeicon">play_arrow</i>cambiar json</a>
+  
+  <nav class="blue-grey darken-2 fixed-navbar" role="navigation">
+    <div class="nav-wrapper container" style="width:70%; left:15%;; position:absolute; top:0"><a id="logo-container" href="#" class="brand-logo"><img src="images/Retina.png" style="max-height:56px;"></a>
+      <ul class="center">
+        <h4 class="hide-on-med-and-down site_title" style="margin-top:10px">Prueba Front-end</h4>
+      </ul>
+     
+    </div>
+  </nav>
+    <div class="jsonrow">    
+      <div class="card white lighten-2 card-json ocult">
+            <div class="card-for-json card-content ">
+               <i class="material-icons right ocultjson">close</i>
+              <div class="row" style="height:120px">
+
+                <form id="form" onsubmit="return false;">
+                  <div class="input-field col s9 valign-middle"> 
+                    <i class="material-icons prefix languageicon">language</i>
+                    <input type="text" id="userInput" />
+                    <label for="userInput">url del nuevo json</label>
+                  </div>
+                  <div class="input-field col s1 valign-middle">  
+                    <input class="waves-button-input waves-light btn refreshjson jsonbtn" id="enviar" type="submit" value="enviar"/>
+                  </div>  
+                </form>
+              </div>
+            </div>
+      </div>             
+  </div>
+  <div class="container" style="position:relative; z-index:80;">
+  <div class="section">
+  <h5 class="hide-on-large-only center site_title" style="font-size:2rem; margin-top:80px">Prueba Front-end</h5>
+  <nav class="initial-appear ocult newstitles">
+    <div class="nav-wrapper">
+    <div class="row" style="margin-bottom:0;">
+      <div class="col s2">
+        &nbsp<a href="#" class="button brand-logo left"><i class="button material-icons">view_headline</i></a></div>
+      <div class="col s8">
+        <p class="center newstitle" id="newstitle"></p>
+      </div>
+      <div class="col s2"> &nbsp </div>
+    </div>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+      </ul>
+    </div>
+  </nav>
+
+
+      <!--   Icon Section   -->
+    <div class="initial-appear ocult newslist">  
+      <div class="initial-appear newsdiv">
+
+          <div style="padding: 10px 10% 10px 10%; width: 100%;">
+            <ul class="collapsible toempty cero-opacity news-collap" data-collapsible="accordion" id="newsdata" style="background-color:#fff;" >
+            </ul>
+          </div>
+      </div>
+  
+      </div>
+    </div>
+    </div>
+  </div>
+  <footer class="page-footer grey lighten-2" style="padding:0">
+    <div class="footer-copyright">
+      <div class="container">
+      © 2016 Jaime López
+      <a class="grey-text text-lighten-4 right" href="#!"></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
