@@ -86,6 +86,8 @@ footer.page-footer {
 .top-nav {
   color: #fff;
   text-transform: none;
+
+  padding: 0 1em;
 }
 
 .topicon{
@@ -95,6 +97,7 @@ footer.page-footer {
 .top-navactive {
   color: #d50000;
   text-transform: none;
+  padding: 0 1em;
 }
 
 .card-title {
