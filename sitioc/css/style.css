@@ -215,7 +215,7 @@ footer.page-footer {
 }
 
 .fixed-action-btn {
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .accionbtn {
@@ -226,7 +226,9 @@ footer.page-footer {
   font-size: 2rem;
 
 }
-
+.clic {
+  cursor: pointer;
+}
 .acciontxt {
   line-height: 0px;
   font-size: .28em;
