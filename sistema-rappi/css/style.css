@@ -1,0 +1,66 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+@font-face {
+  font-family: "avenir-black";
+  src: url("../font/avenir/AvenirLTStd-Black.otf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "avenir-book";
+  src: url("../font/avenir/AvenirLTStd-Book.otf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "avenir-Heavy";
+  src: url("../font/avenir/AvenirLTStd-Heavy.otf") format("truetype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "avenir";
+  src: url("../font/avenir/AvenirLTStd-Medium.otf") format("truetype");
+  font-weight: 200;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.side-nav.fixed a {
+	color: #fff;
+}
+
+.side-nav li:hover {
+	background-color: #37474f;
+}
+
+.nav ul a:hover {
+	background-color: #fff;
+}
+
+.whiteimg {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+body {
+	font-family: "avenir";
+}
+
+#grad {
+    background: orange; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(orange, red); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(orange, red); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(orange, red); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(orange, red); /* Standard syntax */
+}

@@ -1,0 +1,30 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+@font-face {
+  font-family: "avenir";
+  src: url("../font/avenir/AvenirLTStd-Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  line-height: 1.5;
+  font-family: "avenir", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 10px;
+  line-height: 1.2;
+}
