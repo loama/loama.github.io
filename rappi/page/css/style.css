@@ -1,0 +1,162 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@font-face {
+  font-family: "Campton-light";
+  src: url("../font/Campton-Light.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Campton-bold";
+  src: url("../font/Campton-bold.eot") format("embedded-opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  font-family: "Campton-light", sans-serif;
+  font-weight: normal;
+}
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.fixed-navbar {
+  z-index: 10;
+  height: 50px;
+  position: fixed;
+}
+
+body {
+  margin-top: 50px;
+}
+
+.slider .slides li .caption {
+  top: 0%;
+  left: 0%;
+  width: 100%;
+}
+
+.slider .slides {
+  height: 440px;
+}
+
+.home-food {
+  width: 10em !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+nav ul a:hover {
+  background-color: transparent;
+  color:#abc;
+}
+
+nav ul a{
+  height: 50px;
+  margin-top: -5px;
+}
+/* hide navigation bar */
+
+header {
+    background: #f5b335;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
+}
+
+.nav-up {
+    top: -50px;
+    z-index: 10000;
+}
+
+.nav-down {
+    z-index: 10000;
+}
+
+footer { background: #ddd;}
+* { color: transparent}
+
+/*  */
+
+#videodiv {
+background: url('../images/home/forvideo.png') no-repeat; 
+-moz-background-size: cover; background-size: cover; 
+-webkit-background-size: cover; 
+-o-background-size: cover; 
+background-color: 
+transparent; 
+height: 36vw;
+}
+
+.pic  {
+    opacity: 1; filter: alpha(opacity=100);
+    width: 30%;
+  } 
+
+.pic:hover { 
+    opacity: 0.3; filter: alpha(opacity=30); 
+  } 
+
+#videocenterbutton {
+  width: 10vw; height: 10vw;  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top: 13vw;
+}
