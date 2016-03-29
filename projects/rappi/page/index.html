@@ -44,7 +44,7 @@
               
           </li>
           <li style="background-color: #fd6250">
-            <img src="images/redbanner/2.jpg" class="home-food" style="height: 8.92em">
+            <img src="images/redbanner/2.jpg" class="home-food" style="height: 17.9em; width: 20em !important">
             <img src="images/redbanner/4.jpg" class="home-food" style="height: 5.68em">
             <img src="images/redbanner/6.jpg" class="home-food" style="height: 9.9em">
             <img src="images/redbanner/1.jpg" class="home-food" style="height: 7.9em">
@@ -185,33 +185,8 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript">
-    var settings = {
-      "async": true,
-      "crossDomain": true,
-      "url": "https://www.workable.com/spi/v3/accounts/rappi/jobs",
-      "method": "GET",
-      "headers": {
-        "authorization": "Bearer ffe357eb66a2fed4512adc84d7c613a2398d458f0601d9ef048df7b8a90d134c"
-      }
-    }
-
-    $.ajax(settings).done(function (response) {
-      console.log(response);
-});
-    
-  </script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('.slider').slider({full_width: true, height: 600, transition: 1000});
-      // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-      $('.modal-trigger').leanModal({
-        dismissible: false
-      });
-      }); 
-  </script>
 
   </body>
 </html>
