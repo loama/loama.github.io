@@ -1,0 +1,26 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.display-animation > * {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+.display-animation > .animated {
+  -webkit-animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+  -o-animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+  animation: display 0.5s cubic-bezier(0.55, 0, 0.1, 1) forwards;
+}
