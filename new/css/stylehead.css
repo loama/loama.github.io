@@ -55,24 +55,10 @@ a img {
   box-sizing: border-box; }
 
 body {
-  background-color: #f0f0f0;
-  color: #505050;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 1.8; }
+  background-color: #f0f0f0; }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
-  font-weight: 300; }
-
-a {
-  text-decoration: none;
-  color: #3cb5f9; }
-
-a:hover {
-  color: #0793e2; }
+}
 
 /* =Template
 -------------------------------------------------------------- */
