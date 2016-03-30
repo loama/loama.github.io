@@ -28,3 +28,42 @@ html {
   font-size: 10px;
   line-height: 1.2;
 }
+
+@media only screen and (max-width: 992px) {
+  .pagination {
+    width: 100%;
+  }
+  .pagination li.prev,
+  .pagination li.next {
+    width: 10%;
+  }
+  .pagination li.pages {
+    width: 80%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 2vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  html {
+    font-size: 1.3vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  html {
+    font-size: 1vw;
+  }
+}
+
+@media only screen and (min-width: 1480px) {
+  html {
+    font-size: 14px;
+  }
+}
