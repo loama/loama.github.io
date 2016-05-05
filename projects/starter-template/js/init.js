@@ -17,6 +17,7 @@ $("form").submit(function() {
           alliance = jsondata.alliance_name;
           foto = jsondata.request;
           console.log(jsondata.store_id);
+          $(document.body).style.background-color = "#abc";
           alert(alliance);
           logincard = document.getElementById("#logincard");
           
