@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Rappi Alianzas</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body style="max-height: 100vh; overflow: hidden;">
+  <div class="bottom-nav" style="z-index: 3">
+    <div class="nav-wrapper container">
+      <center>
+        <ul class="tabs transparent">
+          <li class="tab col s3"><img src="img/nuevos.png" style="height: 25px; position: absolute; margin-left: -1.5vw;"><a class="active" href="#test1">Nuevos</a></li>
+          <li class="tab col s3"><img src="img/enprogreso.png" style="height: 25px; position: absolute; margin-left: -1.5vw;"><a href="#test2">En Progreso</a></li>
+          <li class="tab col s3"><img src="img/finalizados.png" style="height: 25px; position: absolute; margin-left: -1.5vw;"><a href="#test3">Finalizados</a></li>
+        </ul>
+      </center>
+    </div>
+  </div>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="header">
+      <div class="card">
+      <form id="changeStatus" action="http://52.10.76.37/alien/public/state" method="POST" target="myIframe" style="display: none">
+        <input type="text" name="order_id" id="order_id" value="83782"></input>
+        <input type="text" id="status" name="status" value="taked_by_alliance"></input>
+        <input type="submit"></input> 
+      </form>
+      </div>
+    </div>
+    <iframe src="" name="myIframe" style="display: none"></iframe>
+    
+    <div id="test1" class="col s12">
+      <div class="container">
+        <ul class="collapsible " data-collapsible="accordion" style="background-color: #fff; max-height: 68vh; overflow: scroll; z-index: 2" id="nuevasordenesTab">
+          
+        </ul>
+        <center><div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+
+          <div class="spinner-layer spinner-red">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+
+          <div class="spinner-layer spinner-yellow">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+
+          <div class="spinner-layer spinner-green">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
+        </div></center>
+      </div>
+    </div>
+    
+    <div id="test2" class="col s12">
+      <div class="container">
+        <ul class="collapsible " data-collapsible="accordion" style="background-color: #fff; max-height: 68vh; overflow: scroll; z-index: 2" id="enprogresoordenesTab">
+          
+        </ul>
+      </div>
+    </div>
+   
+    <div id="test3" class="col s12">
+      <div class="container">
+        <ul class="collapsible " data-collapsible="accordion" style="background-color: #fff; max-height: 68vh; overflow: scroll; z-index: 2" id="finalizadasordenesTab">
+          
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+  <div id="loginScreen" class="login-screen">
+    <div class="container">
+      <img src="img/logo3d.png" id="loginimage" class="top-image-login center-block" style="min-width: 200px">
+      <div class="card card-rounded" id="CardLogin">
+        <div class="card-content">
+          <form class="col s12" action="http://52.10.76.37/alien/public/auth" method="post" name="form" target="my_iframe" id="login-form">
+            <div class="row">
+              <div class="input-field col s12">
+                <input placeholder="email" id="first_name" type="text" class="validate" name="email">
+              </div>
+              <div class="input-field col s12">
+                <input placeholder="contraseña" id="password" type="password" class="validate" name="password">
+              </div> 
+            </div>
+            <input type="submit" id="submitBtn" style="display: none"></input>
+          </form>
+        </div>
+      </div>
+      <center><a class="waves-effect waves-light btn green loginBtn" onclick="submitForm()">Iniciar sesión</a></center>
+    </div>  
+  </div>
+  <iframe src="" name="my_iframe" style="display: none;"></iframe>
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          
+        </div>
+
+        <div class="col s12 m4">
+          
+        </div>
+
+        <div class="col s12 m4">
+          
+      </div>
+
+    </div>
+    <br><br>
+
+    <div class="section">
+
+    </div>
+  </div>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.collapsible').collapsible({
+        accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+      });
+      $('#loginimage').addClass("animated bounceInUp");
+    });
+  </script>
+
+  </body>
+</html>

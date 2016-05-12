@@ -1,0 +1,132 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(materialicons.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+	max-height: 100vh;
+	font-family: "avenir";
+	background-position: top center;
+	background-size: auto 100vh;
+}
+
+.header {
+	height: 30vh;
+} 
+
+.transparent {
+	background-color: transparent;
+}
+
+@font-face {
+  font-family: "avenir";
+  src: url("../font/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+  font-family: "avenir-black";
+  src: url("../font/AvenirLTStd-Black.otf");
+}
+
+.bottom-nav {
+	background-color: rgba(0,0,0,0.1);
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+}
+
+.product-title {
+	font-family: 'avenir-black';
+}
+
+.container .row {
+	margin: 0;
+}
+
+.card-rounded {
+	border-radius: 10px !important;
+}
+
+.tabs .indicator {
+  background-color: #fd6250;
+}
+
+.loginBtn{
+	text-transform: none;
+}
+
+.top-image-login {
+	width: 30vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.login-screen {
+	position: fixed;
+	top: 0;
+	background-color: #000;
+	z-index: 30;
+	height: 100vh;
+	width: 100vw;
+	background-image: url('../img/art_2693.jpg');
+	background-repeat: repeat;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.tabs .tab a {
+	text-transform: none;
+	color: #fff;
+	margin-top: 10px;	
+}
+
+.orders {
+	background-color: #fff;
+}
+
+.tabs .tab a.active{
+	color: #fd6250;	
+}
+
+.tabs .tab a:hover {
+	color: #fd6250;
+}
