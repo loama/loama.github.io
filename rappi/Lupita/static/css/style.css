@@ -1,0 +1,117 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+@font-face {
+  font-family: "avenir";
+  src: url("../fonts/avenir/AvenirLTStd-Book.otf");
+}
+
+body {
+	font-family: 'avenir';
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.ocult {
+	display: none;
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.tabs .tab a {
+	color: #fff;
+}
+
+.rappi-gradient {
+
+  background: red; /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-radial-gradient(#FF925A,#FE7562,#FF3B2F);
+  /* For Opera 11.1 to 12.0 */
+  background: -o-radial-gradient(#FF925A,#FE7562,#FF3B2F);
+  /* For Fx 3.6 to 15 */
+  background: -moz-radial-gradient(#FF925A,#FE7562,#FF3B2F);
+  /* Standard syntax */
+  background: radial-gradient(#FF925A,#FE7562,#FF3B2F); 
+
+}
+
+@media only screen and (min-width: 993px) {
+  nav a.button-collapse {
+    display: block;
+  }
+}
+
+.input-field .prefix.active {
+  color: gray;
+}
+
+.row .col {
+  padding: 0 0.25rem;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #fd6250;
+  box-shadow: 0 1px 0 0 #fd6250;
+}
+
+.tabs .tab a.active {
+	color: #fd6250;
+}
+.tabs .tab a:hover {
+  background-color: transparent !important;
+}
+
+.nav-tab {
+  background-color: #fff;
+   border-radius: 20px;
+    height: 20px;
+    width: 90%;
+    box-shadow: 2px 1px 1px 1px #aaa;
+}
+
+.tabs .indicator {
+  top: 30px;
+  width: 11%;
+  background-color: transparent !important;
+}
+
+.chart {
+  width: 100%;
+  height: 
+}
+.card {
+  border-radius: 15px;
+}
+
+.tabs .indicator {
+	background-color: #fd6250;
+	height: 5px;
+}
+
+footer.page-footer {
+	padding: 0;
+	margin: 0;
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <title>Simple icons</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <div style="position: absolute; top: 10px; right: 10px; width: 10vw; min-width: 100px; background-color: #fff; height: 100px; border-radius: 10px";>
+    	Bicicletas:
+    	Motos:
+    </div>
+    <script>
+
+
+// This example adds a marker to indicate the position of Bondi Beach in Sydney,
+// Australia.
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 12,
+    center: {lat: 19.407680, lng: -99.184409}
+  });
+
+  
+  var image = '../img/1mapmarker2.png';
+  var image1 = '../img/1mapmarker2.png';
+  var image2 = '../img/1mapmarker1.png'
+  var contentString = "hola";
+
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+  var marker = new google.maps.Marker({
+  	icon: image,
+  	height: 5,
+    position: {lat: 19.363, lng: -99.044},
+    map: map,
+    title: 'Uluru (Ayers Rock)'
+  });
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
+  
+
+$.ajax({
+            type: "GET",
+            url: "http://localhost:8080/mx/operaciones/request/storekeepersmap",
+            dataType: "json",
+            success : function(data) {
+                          json = data;
+                          for (i = 0; i < json.length; i++){
+                          	contentString = data[i].telephone;
+                          	lat = data[i].lat;
+                          	lng = data[i].lng;
+                          	console.log(lat, lng);
+                          	var marker = new google.maps.Marker({
+							  	icon: image2,
+							  	height: 50,
+							    position: {lat: lat, lng: lng},
+							    map: map,
+							    title: data[i].first_name + data[i].telephone,
+							  });
+							  marker.addListener('click', function() {
+							    infowindow.open(map, marker);
+							  });                           }
+            }
+        });                 
+
+
+
+$.ajax({
+            type: "GET",
+            url: "http://52.35.255.172:3000/storekeepers?state=eq.1&payment_type=eq.CA",
+            dataType: "json",
+            success : function(data) {
+                          json = data;
+                          for (i = 0; i < json.length; i++){
+                          	lat = data[i].lat;
+                          	lng = data[i].lng;
+                          	console.log(lat, lng);
+                          	var marker1 = new google.maps.Marker({
+							  	icon: image1,
+							  	height: 50,
+							    position: {lat: lat, lng: lng},
+							    map: map,
+							    title: 'Uluru (Ayers Rock)'
+							  });
+							  marker.addListener('click', function() {
+							    infowindow.open(map, marker1);
+							  });                           }
+            }
+        });                 
+
+}
+
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0RiI-cHQRwuG-4ibRr6fB9TdMxNFgWbY&signed_in=true&callback=initMap"></script>
+  </body>
+</html>
