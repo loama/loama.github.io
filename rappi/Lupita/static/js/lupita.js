@@ -1,6 +1,6 @@
 var searchQuery= "juan";
-var searchUrl = "http://dev.lupita.co/mx/mex/operaciones/request/search/"
-var searchUrl2 = "http://dev.lupita.co/mx/mex/customercare/request/search/"
+var searchUrl = "http://lupita.co/mx/mex/operaciones/request/search/"
+var searchUrl2 = "http://lupita.co/mx/mex/customercare/request/search/"
 
 function capitalise(string) {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
@@ -132,7 +132,7 @@ function searching() {
 function reload() {
 	$.ajax({
 		            type: "GET",
-		            url: "http://dev.lupita.co/mx/mex/operaciones/request/dashboardkpis",
+		            url: "http://lupita.co/mx/mex/operaciones/request/dashboardkpis",
 		            dataType: "json",
 		            success : function(kpis) {
 		                          json = kpis;
@@ -184,7 +184,7 @@ function reload() {
 
 $.ajax({
 	            type: "GET",
-	            url: "http://dev.lupita.co/mx/mex/operaciones/request/badRates",
+	            url: "http://lupita.co/mx/mex/operaciones/request/badRates",
 	            dataType: "json",
 	            success : function(badrates) {
 	                        json = badrates;
@@ -202,7 +202,7 @@ $.ajax({
 function dashboardkpis(){
 	$.ajax({
 		            type: "GET",
-		            url: "http://dev.lupita.co/mx/mex/operaciones/request/dashboard",
+		            url: "http://lupita.co/mx/mex/operaciones/request/dashboard",
 		            dataType: "json",
 		            success : function(dashboard) {
 		            			json = dashboard;
@@ -230,7 +230,7 @@ function dashboardkpis(){
 
 	$.ajax({
 		            type: "GET",
-		            url: "http://dev.lupita.co/mx/mex/operaciones/request/sales",
+		            url: "http://lupita.co/mx/mex/operaciones/request/sales",
 		            dataType: "json",
 		            success : function(dashboard) {
 		            			json = dashboard;
@@ -257,7 +257,7 @@ setInterval(dashboardkpis, 1*60*1000);
 setInterval(reload, 30*1000);
 $.ajax({
 	            type: "GET",
-	            url: "http://dev.lupita.co/mx/mex/operaciones/request/oneStars",
+	            url: "http://lupita.co/mx/mex/operaciones/request/oneStars",
 	            dataType: "json",
 	            success : function(oneStars) {
 	                        json = oneStars;
@@ -279,7 +279,7 @@ $.ajax({
 
 $.ajax({
 	            type: "GET",
-	            url: "http://dev.lupita.co/mx/mex/operaciones/request/fiveStars",
+	            url: "http://lupita.co/mx/mex/operaciones/request/fiveStars",
 	            dataType: "json",
 	            success : function(fiveStars) {
 	                        json = fiveStars;
@@ -312,7 +312,7 @@ function userModal(userid) {
  // Function for users orders in modal
 	$.ajax({
 	            type: "GET",
-	            url: "http://dev.lupita.co/mx/mex/customercare/request/user/" + userid + "/orders/page/1",
+	            url: "http://lupita.co/mx/mex/customercare/request/user/" + userid + "/orders/page/1",
 	            dataType: "json",
 	            success : function(userOrders) {
 	            			
@@ -342,7 +342,7 @@ function userModal(userid) {
 	                       									<div class='row' style='border-width:10px; border-radius:10px'> \
 	                       										<div class='col-sm-3'>" +
 	                       											"<div style='border-radius:2px; width: 70px;'> " + json.orders[i].order_id + "</div>" +
-	                       											"<img src=http://dev.lupita.co/static/img/calendar-icon.png style='margin-left:-10px; width:100%'><span style='position: absolute; top: 40px;left: 35px;font-weight: 600;color: white;'>" +
+	                       											"<img src=http://lupita.co/static/img/calendar-icon.png style='margin-left:-10px; width:100%'><span style='position: absolute; top: 40px;left: 35px;font-weight: 600;color: white;'>" +
 	                       											mes + "</span>" +
 	                       											"<span style='position:absolute; top: 70px; left: 35px; font-weight:600; font-size:30px; color:#3b3b3b;'>"+ json.orders[i].created_at.substring(8, 10) + 
 	                       											"</span><br>" 
@@ -374,7 +374,7 @@ function userModal(userid) {
 
 	$.ajax({
 	            type: "GET",
-	            url: "http://dev.lupita.co/mx/mex/customercare/request/user/" + userid + "/profile",
+	            url: "http://lupita.co/mx/mex/customercare/request/user/" + userid + "/profile",
 	            dataType: "json",
 	            success : function(userProfile) {
 	                        json = userProfile;
@@ -433,10 +433,10 @@ function userModal(userid) {
 }	   
 function openordermodal (orderid) {
 	$('#order-detail').css("display", "block");
-	var url = "http://dev.lupita.co/mx/mex/customercare/request/user/" + useridnext + "/orders/" + orderid + "/";
+	var url = "http://lupita.co/mx/mex/customercare/request/user/" + useridnext + "/orders/" + orderid + "/";
 	$.ajax({
 	            type: "GET",
-	            url: "http://dev.lupita.co/mx/mex/customercare/request/user/" + useridnext + "/orders/" + orderid + "/",
+	            url: "http://lupita.co/mx/mex/customercare/request/user/" + useridnext + "/orders/" + orderid + "/",
 	            dataType: "json",
 	            success : function(orderdetail) {
 	            									json = orderdetail;
