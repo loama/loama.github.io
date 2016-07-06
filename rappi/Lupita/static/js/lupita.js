@@ -403,6 +403,7 @@ function userModal(userid) {
 	                       							  							"<br>" + "Completados: " + json[0].finalizados +
 	                       							  							"<br>" + "Cancelados: " + json[0].cancelados +
 	                       							  							"<br>" + "Pagado: $"  + json[0].invertido + 
+	                       							  							"<br>" + "Tarjetas: "  + json[0].tarjeta + 
 	                       							  "</span>"
 
 	                       							);
@@ -475,6 +476,7 @@ function openordermodal (orderid) {
 													$('#order-detail-time').append(json.created_at);
 													$('#order-detail-type').empty();
 													$('#order-detail-type').append(json.payment_method);
+													$('#order-detail-address').append(json.address);
 
 
 													$('#order-detail-products').empty();
@@ -534,4 +536,4 @@ function openordermodal (orderid) {
 function closeorderdetail(){
 	$('#order-detail').css("display", "none");
 }
-userModal(); 	     	      	                         
+userModal(); 	     	      	            
