@@ -476,7 +476,7 @@ function openordermodal (orderid) {
 													$('#order-detail-time').append(json.created_at);
 													$('#order-detail-type').empty();
 													$('#order-detail-type').append(json.payment_method);
-													$('#order-detail-address').append(json.address);
+													$('#order-detail-address').append(json.address_address);
 
 
 													$('#order-detail-products').empty();
