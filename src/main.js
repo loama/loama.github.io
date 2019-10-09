@@ -4,7 +4,11 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 
+import Scrollspy from 'vue2-scrollspy'
+
 Vue.config.productionTip = false
+
+Vue.use(Scrollspy)
 
 new Vue({
   router,

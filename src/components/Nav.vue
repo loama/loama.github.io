@@ -6,30 +6,25 @@
       JAIME LOPEZ
     </div>
 
-    <ul class="links">
-      <li v-bind:class="{active: active === 'extract'}"
-          v-on:click="nav('extract')">
-          extract
+    <ul class="links" v-scroll-spy-active v-scroll-spy-link>
+      <li>
+        <a> extract </a>
       </li>
 
-      <li v-bind:class="{active: active === 'experience'}"
-          v-on:click="nav('experience')">
-          experience
+      <li>
+        <a> experience </a>
       </li>
 
-      <li v-bind:class="{active: active === 'projects'}"
-          v-on:click="nav('projects')">
-        projects
+      <li>
+        <a> projects </a>
       </li>
 
-      <li v-bind:class="{active: active === 'school'}"
-          v-on:click="nav('school')">
-          school
+      <li>
+        <a> school </a>
       </li>
 
-      <li v-bind:class="{active: active === 'hobbies'}"
-          v-on:click="nav('hobbies')">
-        hobbies
+      <li>
+        <a> hobbies </a>
       </li>
     </ul>
 
@@ -41,11 +36,6 @@ export default {
   data () {
     return {
       active: 'extract'
-    }
-  },
-  methods: {
-    nav (page) {
-      this.active = page
     }
   },
   name: 'nav'
@@ -77,11 +67,14 @@ export default {
 
       li
         cursor: pointer
-        height: 48px
         line-height: 48px
-        padding: 0 32px
 
         &.active
           background: #000
           color: #FFF
+
+        a
+          height: 48px
+          padding: 0 32px
+          width: 100%
 </style>
