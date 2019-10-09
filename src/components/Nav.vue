@@ -3,7 +3,7 @@
     <img class="profile-pic" src="../assets/1.webp">
 
     <div class="title">
-      JAIME LOPEZ
+      Jaime López
     </div>
 
     <ul class="links" v-scroll-spy-active v-scroll-spy-link>
@@ -45,7 +45,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
   #nav
-    border: 1px solid #E5E5E5
+    border: 2px solid #000
     min-height: 320px
     left: 24px
     position: fixed
@@ -70,11 +70,10 @@ export default {
         line-height: 48px
 
         &.active
-          background: #000
+          background: #FFC107
           color: #FFF
 
         a
-          height: 48px
-          padding: 0 32px
+          padding: 15px 160px 15px 32px
           width: 100%
 </style>

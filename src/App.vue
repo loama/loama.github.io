@@ -9,18 +9,20 @@
     margin: 0
 
   @font-face
-    font-family: 'NewYorker'
-    src: url('./assets/fonts/newyorker/newyorkr.ttf')
+    font-family: 'GoogleSans-Regular'
+    src: url('./assets/fonts/Google-Sans/GoogleSans-Regular.ttf')
 
   @font-face
-    font-family: 'AdobeCaslon'
-    src: url('./assets/fonts/adobe-caslon-pro/ACaslonPro-Regular.otf')
+    font-family: 'GoogleSans-Medium'
+    src: url('./assets/fonts/Google-Sans/GoogleSans-Medium.ttf')
 
   #app
     min-height: 300vh
-    font-family: Adobe Caslon,Georgia,Times New Roman,Times,serif
+    font-family: 'GoogleSans-Regular', arial, sans-serif
+    font-size: 16px
+    font-weight: 400
     width: 100vw
 
     .title
-      font-family: 'NewYorker'
+      font-family: 'GoogleSans-Medium'
 </style>
