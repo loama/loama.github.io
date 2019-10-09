@@ -1,5 +1,7 @@
 <template>
-  <div id="nav">
+  <div id="navigation">
+    <div class="topbar"></div>
+
     <img class="profile-pic" src="../assets/1.webp">
 
     <div class="title">
@@ -38,25 +40,39 @@ export default {
       active: 'extract'
     }
   },
-  name: 'nav'
+  name: 'navigation'
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
-  #nav
+  @import "@/variables.sass"
+
+  #navigation
+    background: #FFF
     border: 2px solid #000
     min-height: 320px
-    left: 24px
+    left: calc(50vw - 512px + 24px)
     position: fixed
     top: 32px
     width: 240px
 
+    .topbar
+      background: $yellow
+      height: 48px
+      left: 0
+      position: absolute
+      top: 0
+      width: 100%
+
     .profile-pic
       margin: 20px
+      position: relative
       width: 200px
+      z-index: 1
 
     .title
+      color: #000
       font-size: 28px
       margin-top: 16px
       text-align: center
@@ -70,10 +86,14 @@ export default {
         line-height: 48px
 
         &.active
-          background: #FFC107
+          background: $yellow
           color: #FFF
 
         a
-          padding: 15px 160px 15px 32px
+          padding: 15px 156px 15px 32px
           width: 100%
+
+  @media screen and (max-width: 1024px)
+    #navigation
+      left: 16px
 </style>
