@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "personal-web-42cc4"
+    "default": "personal-web-42cc4",
+    "personal-web": "personal-web-42cc4"
   }
 }
