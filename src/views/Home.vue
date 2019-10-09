@@ -2,7 +2,7 @@
   <div class="home">
     <Nav />
 
-    <div id="content" v-scroll-spy v-scroll-spy-link="{selector: 'li.menu-link'}">
+    <div id="content" v-scroll-spy="{offset: 32}" v-scroll-spy-link="{selector: 'li.menu-link'}">
       <Extract />
 
       <div> experience </div>
@@ -36,6 +36,7 @@ export default {
     margin: 32px 288px 32px
 
     >div
-      border: 1px solid #E5E5E5
+      border-bottom: 1px solid #E5E5E5
+      margin-bottom: 32px
       min-height: 500px
 </style>
