@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <img class="profile-pic" src="../assets/1.jpeg">
+    <img class="profile-pic" src="../assets/1.webp">
 
     <div class="title">
       JAIME LOPEZ
