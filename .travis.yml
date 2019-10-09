@@ -1,0 +1,39 @@
+language: node_js
+node_js:
+  - "10.12.0"
+
+before_install:
+  - export CHROME_BIN=/usr/bin/google-chrome
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sudo apt-get update
+  - sudo apt-get install -y libappindicator1 fonts-liberation
+  - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  - sudo dpkg -i google-chrome*.deb
+
+install:
+- npm install
+
+# - if [ $TRAVIS_PULL_REQUEST == "true" ]; then echo "this is a Pull Request" fi
+
+- npm run build
+
+script:
+# - npm run test:e2e
+
+deploy:
+- provider: firebase
+  project: "personal-web"
+  skip_cleanup: true
+  token:
+    secure: "Hn2v2QHqj2wM7GKfeHXyeNqbuCB8gOmw0/oMaaPf2nLCC0yf5NTNbsHm/QPH78bqbuQ9AslMDZdbcqOk8hpptUgCkM3Jagji2yCKk9FuyKoO8jEFnhqaNGoWu4xB/YlvjzR6I9ayfiItHPcliEN435x3xKXobHySx7ft8Q2t+6IBNMQgxaFoj90wdCJCvtsOqm17xIatw8idPLgdhdMEBPIOV+SldGf9GB2R1VNsNoS2g5MBzMpGmnsCD6BLY978tla1h6M0qb1qooDOS5kUK+tCvBZWbukaccHOD1WgMpZ+LsqRtcxLSI25KxgPvQ7g+fs0VfzPL0r8Y0fugbro74eJl8FU4nJcHJWtzLX7/G/Uw2Za8EFFrv1AbHVVjhtVBouV8aYK4JpdwlNxvIgJpwwPcI4juYMK0zS4X+he5w7eNZjigbofavL3oUczjxhMCqDR0Xw6+qBmva9kTdVAHqYnbZ3CAZFUO82ISbht727iomCZHW/qvNZxoMQFAZJBjRfuokE0JzrQPXJVt/rGd+o78EB0RXOtL3M+E/PqiOa50cvtgqNYNd/on/SjUJ+Ab763HyPe0jt/u5ingbOARZci4qH4Kk5AX+F4yAB6EvndURSkth4yIVpzO/9lqPvzWAwpr9MgnTV9hM0eri7fk6LGqVMSJtEiAkhUYNxnjTM="
+  on:
+    branch: master
+
+- provider: firebase
+  project: "personal-web-qa"
+  skip_cleanup: true
+  token:
+    secure: "Hn2v2QHqj2wM7GKfeHXyeNqbuCB8gOmw0/oMaaPf2nLCC0yf5NTNbsHm/QPH78bqbuQ9AslMDZdbcqOk8hpptUgCkM3Jagji2yCKk9FuyKoO8jEFnhqaNGoWu4xB/YlvjzR6I9ayfiItHPcliEN435x3xKXobHySx7ft8Q2t+6IBNMQgxaFoj90wdCJCvtsOqm17xIatw8idPLgdhdMEBPIOV+SldGf9GB2R1VNsNoS2g5MBzMpGmnsCD6BLY978tla1h6M0qb1qooDOS5kUK+tCvBZWbukaccHOD1WgMpZ+LsqRtcxLSI25KxgPvQ7g+fs0VfzPL0r8Y0fugbro74eJl8FU4nJcHJWtzLX7/G/Uw2Za8EFFrv1AbHVVjhtVBouV8aYK4JpdwlNxvIgJpwwPcI4juYMK0zS4X+he5w7eNZjigbofavL3oUczjxhMCqDR0Xw6+qBmva9kTdVAHqYnbZ3CAZFUO82ISbht727iomCZHW/qvNZxoMQFAZJBjRfuokE0JzrQPXJVt/rGd+o78EB0RXOtL3M+E/PqiOa50cvtgqNYNd/on/SjUJ+Ab763HyPe0jt/u5ingbOARZci4qH4Kk5AX+F4yAB6EvndURSkth4yIVpzO/9lqPvzWAwpr9MgnTV9hM0eri7fk6LGqVMSJtEiAkhUYNxnjTM="
+  on:
+    branch: develop
