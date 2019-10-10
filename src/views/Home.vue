@@ -2,7 +2,7 @@
   <div class="home">
     <Nav />
 
-    <div id="content" v-scroll-spy="{offset: 32}" v-scroll-spy-link="{selector: 'li.menu-link'}">
+    <div id="content" v-scroll-spy="{offset: scrollSpyOffset}" v-scroll-spy-link="{selector: 'li.menu-link'}">
       <Extract />
 
       <div> experience </div>
@@ -23,6 +23,15 @@ import Nav from '@/components/Nav.vue'
 import Extract from '@/components/Extract.vue'
 
 export default {
+  computed: {
+    scrollSpyOffset () {
+      if (window.innerWidth > 768) {
+        return 32
+      } else {
+        return 112
+      }
+    }
+  },
   name: 'home',
   components: {
     Nav,
@@ -50,9 +59,19 @@ export default {
 
       >div
         max-width: 712px
+        margin-bottom: 24px
         width: calc(100vw - 312px)
 
   @media screen and (max-width: 768px)
     #content
+      margin: 32px 16px
+
+      >div
+        max-width: calc(100vw - 48px)
+        width: calc(100vw - 48px)
+
+  @media screen and (max-width: 768px)
+    #content
+      margin: 144px 16px 32px 16px
 
 </style>

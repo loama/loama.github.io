@@ -96,4 +96,33 @@ export default {
   @media screen and (max-width: 1024px)
     #navigation
       left: 16px
+
+  @media screen and (max-width: 768px)
+    #navigation
+      height: 99px
+      left: 0
+      min-height: 96px
+      top: 0
+      width: calc(100vw - 5px)
+
+      .topbar
+        background: transparent
+
+      .profile-pic
+        display: none
+
+      ul.links
+        margin: 0
+        padding: 0
+
+        li
+          display: inline-block
+          min-width: calc(20vw - 20px)
+          width: 20%
+
+          a
+            display: block
+            padding: 0
+            text-align: center
+            width: 100%
 </style>
