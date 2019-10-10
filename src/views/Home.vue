@@ -5,13 +5,13 @@
     <div id="content" v-scroll-spy="{offset: scrollSpyOffset}" v-scroll-spy-link="{selector: 'li.menu-link'}">
       <Extract />
 
-      <div> experience </div>
+      <div class="section"> experience </div>
 
-      <div> projects </div>
+      <div class="section"> projects </div>
 
-      <div> school </div>
+      <div class="section"> school </div>
 
-      <div> hobbies </div>
+      <div class="section"> hobbies </div>
     </div>
 
   </div>
@@ -44,12 +44,12 @@ export default {
   #content
     margin: 32px 24px 32px 292px
 
-    >div
+    .section
       background: #FFF
       border: 2px solid #000
       margin-bottom: 32px
       max-width: 688px
-      min-height: 500px
+      min-height: 56px
       padding: 8px
       width: calc(100vw - 320px)
 
@@ -57,7 +57,7 @@ export default {
     #content
       margin: 32px 16px 32px 276px
 
-      >div
+      .section
         max-width: 712px
         margin-bottom: 24px
         width: calc(100vw - 312px)
@@ -66,9 +66,9 @@ export default {
     #content
       margin: 32px 16px
 
-      >div
-        max-width: calc(100vw - 48px)
-        width: calc(100vw - 48px)
+      .section
+        max-width: calc(100vw - 51px)
+        width: calc(100vw - 51px)
 
   @media screen and (max-width: 768px)
     #content

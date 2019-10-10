@@ -28,7 +28,6 @@
 
   #app
     color: $gray
-    min-height: 300vh
     font-family: 'GoogleSans-Regular', arial, sans-serif
     font-size: 16px
     font-weight: 400
@@ -41,11 +40,28 @@
 
   @media screen and (max-width: 1024px)
     #app
-      background: red
       margin: 0
       max-width: 100vw
 
+    .hide-md-down
+      display: none
+
   @media screen and (max-width: 768px)
     #app
-      background: blue
+
+  @media screen and (max-width:480px)
+    .hide-sm-down
+      display: none
+
+  @media screen and (max-width: 420px)
+    .hide-xs-down
+      display: none
+
+  @media screen and (min-width: 480px)
+    .hide-sm-up
+      display: none
+
+  @media screen and (min-width: 420px)
+    .hide-xs-up
+      display: none
 </style>
