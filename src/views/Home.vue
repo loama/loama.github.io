@@ -5,7 +5,7 @@
     <div id="content" v-scroll-spy="{offset: scrollSpyOffset}" v-scroll-spy-link="{selector: 'li.menu-link'}">
       <Extract />
 
-      <div class="section"> experience </div>
+      <Experience />
 
       <div class="section"> projects </div>
 
@@ -21,6 +21,7 @@
 import Nav from '@/components/Nav.vue'
 
 import Extract from '@/components/Extract.vue'
+import Experience from '@/components/Experience.vue'
 
 export default {
   computed: {
@@ -35,7 +36,8 @@ export default {
   name: 'home',
   components: {
     Nav,
-    Extract
+    Extract,
+    Experience
   }
 }
 </script>
@@ -52,6 +54,15 @@ export default {
       min-height: 56px
       padding: 8px
       width: calc(100vw - 320px)
+
+    .section-name
+      background: #FFF
+      border: 2px solid #000
+      color: #000
+      display: inline-block
+      margin-bottom: -2px
+      padding: 4px 8px
+      width: auto
 
   @media screen and (max-width: 1024px)
     #content
