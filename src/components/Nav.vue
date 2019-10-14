@@ -2,7 +2,7 @@
   <div id="navigation">
     <div class="topbar"></div>
 
-    <img class="profile-pic" src="../assets/1.jpeg">
+    <img class="profile-pic" src="../assets/img/1.jpeg">
 
     <div class="title">
       Jaime López

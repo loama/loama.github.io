@@ -12,7 +12,7 @@
     padding: 0
 
   body
-    background: url('assets/background.png')
+    background: url('assets/img/background.png')
 
   body, #app
     position: absolute
