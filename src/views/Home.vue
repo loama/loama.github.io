@@ -7,11 +7,11 @@
 
       <Experience />
 
-      <div class="section"> projects </div>
+      <!-- <div class="section"> projects </div> -->
 
-      <div class="section"> school </div>
+      <School />
 
-      <div class="section"> hobbies </div>
+      <Hobbies />
     </div>
 
   </div>
@@ -22,6 +22,9 @@ import Nav from '@/components/Nav.vue'
 
 import Extract from '@/components/Extract.vue'
 import Experience from '@/components/Experience.vue'
+
+import School from '@/components/School.vue'
+import Hobbies from '@/components/Hobbies.vue'
 
 export default {
   computed: {
@@ -37,7 +40,9 @@ export default {
   components: {
     Nav,
     Extract,
-    Experience
+    Experience,
+    School,
+    Hobbies
   }
 }
 </script>

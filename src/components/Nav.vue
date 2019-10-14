@@ -17,9 +17,9 @@
         <a> experience </a>
       </li>
 
-      <li>
+      <!-- <li>
         <a> projects </a>
-      </li>
+      </li> -->
 
       <li>
         <a> school </a>

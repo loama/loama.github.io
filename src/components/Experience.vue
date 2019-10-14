@@ -6,7 +6,9 @@
       <ul class="experience-list">
 
         <li>
-          <div class="logo zeel"></div>
+          <a target="_blank" href="https://zeel.com">
+            <div class="logo zeel"></div>
+          </a>
 
           <div class="info">
             <div class="head">
@@ -23,7 +25,9 @@
         </li>
 
         <li>
-          <div class="logo grupomodelo"></div>
+          <a target="_blank" href="https://cervezasiempre.com">
+            <div class="logo grupomodelo"></div>
+          </a>
 
           <div class="info">
             <div class="head">
@@ -38,7 +42,9 @@
         </li>
 
         <li>
-          <div class="logo eiya"></div>
+          <a target="_blank" href="https://eiya.mx">
+            <div class="logo eiya"></div>
+          </a>
 
           <div class="info">
             <div class="head">
@@ -55,7 +61,9 @@
         </li>
 
         <li>
-          <div class="logo rappi"></div>
+          <a target="_blank" href="https://rappi.com">
+            <div class="logo rappi"></div>
+          </a>
 
           <div class="info">
             <div class="head">
@@ -70,7 +78,9 @@
         </li>
 
         <li>
-          <div class="logo centraal"></div>
+          <a target="_blank" href="https://centraal.com">
+            <div class="logo centraal"></div>
+          </a>
 
           <div class="info">
             <div class="head">
