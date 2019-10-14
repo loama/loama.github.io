@@ -6,6 +6,7 @@
         <img class="visited_countries" src="../assets/img/visited_countries.png">
 
         <span> I love traveling, have been to 42 countries so far. I also enjoy bicycling, riding my monocycle, going to hackathons and petting doggos. </span>
+        <img src="../assets/img/doggo.png" class="doggo">
       </div>
   </div>
 </template>
@@ -30,8 +31,16 @@ export default {
     .section
       font-size: 14px
       max-width: calc(100% - 16px)
+      position: relative
 
       img.visited_countries
         margin: 0 10%
         width: 80%
+
+      img.doggo
+        bottom: 0
+        height: 48px
+        position: absolute
+        right: 8px
+
 </style>
