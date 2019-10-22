@@ -68,7 +68,7 @@ export default {
       background: #FFF
       border: 2px solid #000
       box-sizing: border-box
-      height: 69px
+      height: 71px
       margin-bottom: 8px
 
       .logo
@@ -100,5 +100,13 @@ export default {
           color: #000
           font-family: 'GoogleSans-Medium'
           text-decoration: none
+
+  @media screen and (max-width: 576px)
+    #school
+      margin-right: 0
+      width: 100%
+
+      .section
+        width: 100%
 
 </style>

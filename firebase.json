@@ -19,7 +19,7 @@
         "value": "max-age=7200000"
       } ]
     }, {
-      // Sets the cache header for 404 pages to cache for 5 minutes
+      // Sets the cache header for html pages to cache for 30 seconds
       "source": "**/*.@(html|ico)",
       "headers": [ {
         "key": "Cache-Control",

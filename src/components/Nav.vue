@@ -90,8 +90,9 @@ export default {
           color: #FFF
 
         a
-          padding: 15px 156px 15px 32px
-          width: 100%
+          display: block
+          padding: 0 16px
+          width: calc(100% - 32px)
 
   @media screen and (max-width: 1024px)
     #navigation

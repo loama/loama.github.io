@@ -43,4 +43,12 @@ export default {
         position: absolute
         right: 8px
 
+  @media screen and (max-width: 576px)
+    #hobbies
+      margin-right: 0
+      width: 100%
+
+      .section
+        width: 100%
+
 </style>
