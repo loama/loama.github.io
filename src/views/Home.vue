@@ -14,6 +14,13 @@
       <Hobbies />
     </div>
 
+    <footer>
+      <a href="https://github.com/loama/loama.github.io"
+         target="_blank">
+          <img src="../assets/img/github.svg">
+      </a>
+    </footer>
+
   </div>
 </template>
 
@@ -49,7 +56,7 @@ export default {
 
 <style lang="sass">
   #content
-    margin: 32px 24px 32px 292px
+    margin: 32px 24px 0 292px
 
     .section
       background: #FFF
@@ -68,6 +75,17 @@ export default {
       margin-bottom: -2px
       padding: 4px 8px
       width: auto
+
+  footer
+    margin-bottom: 16px
+    text-align: center
+
+    img
+      height: 40px
+      opacity: 0.4
+
+      &:hover
+        opacity: 1
 
   @media screen and (max-width: 1024px)
     #content
