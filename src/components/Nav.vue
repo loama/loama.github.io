@@ -30,7 +30,10 @@
       </li>
     </ul>
 
-    <a href="https://raw.githubusercontent.com/loama/loama.github.io/master/public/JaimeLopez-cv-late2019.pdf" target="_blank" class="download">Download CV</a>
+    <a class="download"
+       download="JaimeLopez-cv-late2019.pdf"
+       href="https://raw.githubusercontent.com/loama/loama.github.io/master/public/JaimeLopez-cv-late2019.pdf"
+       target="_blank">Download CV</a>
 
   </div>
 </template>
@@ -106,6 +109,7 @@ export default {
       line-height: 48px
       position: fixed
       text-align: center
+      text-decoration: none
       top: 636px
       width: 240px
 
