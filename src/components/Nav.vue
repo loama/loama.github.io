@@ -30,6 +30,8 @@
       </li>
     </ul>
 
+    <a href="https://raw.githubusercontent.com/loama/loama.github.io/master/public/JaimeLopez-cv-late2019.pdf" target="_blank" class="download">Download CV</a>
+
   </div>
 </template>
 
@@ -74,7 +76,7 @@ export default {
     .title
       color: #000
       font-size: 28px
-      margin-top: 16px
+      line-height: 48px
       text-align: center
 
     ul.links
@@ -94,15 +96,31 @@ export default {
           padding: 0 16px
           width: calc(100% - 32px)
 
+    a.download
+      background: #000
+      border: 2px solid #000
+      color: #FFF
+      cursor: pointer
+      height: 48px
+      left: calc(50vw - 512px + 24px)
+      line-height: 48px
+      position: fixed
+      text-align: center
+      top: 636px
+      width: 240px
+
   @media screen and (max-width: 1024px)
     #navigation
       left: 16px
 
+      a.download
+        left: 16px
+
   @media screen and (max-width: 768px)
     #navigation
-      height: 99px
+      height: 80px
       left: 0
-      min-height: 96px
+      min-height: 80px
       top: 0
       width: calc(100vw - 5px)
 
@@ -118,6 +136,8 @@ export default {
 
         li
           display: inline-block
+          height: 32px
+          line-height: 32px
           min-width: calc(20vw - 20px)
           width: 25%
 
@@ -126,4 +146,12 @@ export default {
             padding: 0
             text-align: center
             width: 100%
+
+      a.download
+        background: #FFF
+        border: none
+        color: #000
+        left: unset
+        right: 4px
+        top: 2px
 </style>

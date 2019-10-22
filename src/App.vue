@@ -12,7 +12,7 @@
     padding: 0
 
   body
-    background: url('assets/img/background.png')
+    background: url('assets/img/background-dots.jpg')
 
   body, #app
     position: absolute

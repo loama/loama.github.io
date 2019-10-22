@@ -1,39 +1,13 @@
-# loama.github.io
+## Jaime Lopez Personal Portfolio
+**loama.github.io**  ![travis status](https://api.travis-ci.org/loama/loama.github.io.svg?branch=master)
 
-## Project setup
-```
-npm install
-```
+This repo contains a static page created with Vue.js containing my professional details.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+#### Stack
+• Vue CLI 3
+• SASS
+• JavaScript
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+• CI/CD with TravisCI
+• Hosting with Firebase
