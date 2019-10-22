@@ -119,7 +119,7 @@ export default {
         li
           display: inline-block
           min-width: calc(20vw - 20px)
-          width: 20%
+          width: 25%
 
           a
             display: block

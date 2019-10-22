@@ -46,7 +46,7 @@ export default {
   @media screen and (max-width: 576px)
     #hobbies
       margin-right: 0
-      width: 100%
+      width: calc(100% - 4px)
 
       .section
         width: 100%

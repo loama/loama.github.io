@@ -121,6 +121,7 @@ export default {
       padding: 0 8px
 
     ul.experience-list
+      list-style: none
       margin: 0
       padding: 0
 
