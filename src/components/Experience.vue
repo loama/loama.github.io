@@ -13,7 +13,7 @@
           <div class="info">
             <div class="head">
               <span class="title">
-                <a href="https://zeel.com" target="_blank">Zeel.com</a> - Project Lead - (Vue/Node/Python) - Remote
+                <a href="https://zeel.com" target="_blank">Zeel.com</a> - Full Stack Developer - (Vue/Node/Python) - Remote
               </span>
 
               <span class="dates">Apr 18 - May 19</span>
