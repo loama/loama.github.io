@@ -7,10 +7,10 @@
         "value": "max-age=7200000"
       } ]
     }, {
-      "source": "**/*.@(jpg|jpeg|gif|png|webp)",
+      "source": "**/*.@(jpg|jpeg|gif|png|webp|svg)",
       "headers": [ {
         "key": "Cache-Control",
-        "value": "max-age=7200000"
+        "value": "max-age=72000000"
       } ]
     }, {
       "source": "**/*.@(css|js)",
