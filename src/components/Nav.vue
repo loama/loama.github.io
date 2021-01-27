@@ -30,7 +30,7 @@
 
     <a
       class="download"
-      download="JaimeLopez-cv-late2019.pdf"
+      download="JaimeLopez-resume-Early2021.pdf"
       href="https://raw.githubusercontent.com/loama/loama.github.io/master/public/JaimeLopez-cv-late2019.pdf"
       target="_blank"
       >Download CV</a
