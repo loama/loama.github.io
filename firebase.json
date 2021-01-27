@@ -23,7 +23,7 @@
       "source": "**/*.@(html|ico)",
       "headers": [ {
         "key": "Cache-Control",
-        "value": "no-cache"
+        "value": "max-age=300"
       } ]
     } ],
     "public": "dist",

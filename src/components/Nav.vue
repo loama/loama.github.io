@@ -31,7 +31,7 @@
     <a
       class="download"
       download="JaimeLopez-Resume-Early2021.pdf"
-      href="https://raw.githubusercontent.com/loama/loama.github.io/master/public/JaimeLopez-Resume-Early2021.pdf"
+      href="https://github.com/loama/loama.github.io/raw/master/public/JaimeLopez_Resume-Early2021.pdf"
       target="_blank"
       >Download CV</a
     >
