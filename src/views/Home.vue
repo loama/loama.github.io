@@ -2,7 +2,11 @@
   <div class="home">
     <Nav />
 
-    <div id="content" v-scroll-spy="{offset: scrollSpyOffset}" v-scroll-spy-link="{selector: 'li.menu-link'}">
+    <div
+      id="content"
+      v-scroll-spy="{ offset: scrollSpyOffset }"
+      v-scroll-spy-link="{ selector: 'li.menu-link' }"
+    >
       <Extract />
 
       <Experience />
@@ -15,12 +19,10 @@
     </div>
 
     <footer>
-      <a href="https://github.com/loama/loama.github.io"
-         target="_blank">
-          <img src="../assets/img/github.svg">
+      <a href="https://github.com/loama/loama.github.io" target="_blank">
+        <img src="/img/github.svg" />
       </a>
     </footer>
-
   </div>
 </template>
 
@@ -35,7 +37,7 @@ import Hobbies from '@/components/Hobbies.vue'
 
 export default {
   computed: {
-    scrollSpyOffset () {
+    scrollSpyOffset() {
       if (window.innerWidth > 768) {
         return 32
       } else {
@@ -55,37 +57,37 @@ export default {
 </script>
 
 <style lang="sass">
-  #content
-    margin: 32px 24px 0 292px
+#content
+  margin: 32px 24px 0 292px
 
-    .section
-      background: #FFF
-      border: 2px solid #000
-      margin-bottom: 32px
-      max-width: 688px
-      min-height: 56px
-      padding: 8px
-      width: calc(100vw - 320px)
+  .section
+    background: #FFF
+    border: 2px solid #000
+    margin-bottom: 32px
+    max-width: 688px
+    min-height: 56px
+    padding: 8px
+    width: calc(100vw - 320px)
 
-    .section-name
-      background: #FFF
-      border: 2px solid #000
-      color: #000
-      display: inline-block
-      margin-bottom: -2px
-      padding: 4px 8px
-      width: auto
+  .section-name
+    background: #FFF
+    border: 2px solid #000
+    color: #000
+    display: inline-block
+    margin-bottom: -2px
+    padding: 4px 8px
+    width: auto
 
-  footer
-    margin-bottom: 16px
-    text-align: center
+footer
+  margin-bottom: 16px
+  text-align: center
 
-    img
-      height: 40px
-      opacity: 0.4
+  img
+    height: 40px
+    opacity: 0.4
 
-      &:hover
-        opacity: 1
+    &:hover
+      opacity: 1
 
   @media screen and (max-width: 1024px)
     #content
@@ -107,5 +109,4 @@ export default {
   @media screen and (max-width: 768px)
     #content
       margin: 144px 16px 32px 16px
-
 </style>

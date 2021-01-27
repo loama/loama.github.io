@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style lang="sass">
-  @import "@/variables.sass"
+@import "@/variables.sass"
 
-  html, body
-    margin: 0
-    padding: 0
+html, body
+  margin: 0
+  padding: 0
 
   body
-    background: url('assets/img/background-dots.jpg')
+    background: url('/img/background-dots.jpg')
 
   body, #app
+    overflow-x: hidden
     position: absolute
     top: 0
 
@@ -38,30 +39,30 @@
     .title
       font-family: 'GoogleSans-Medium'
 
-  @media screen and (max-width: 1024px)
-    #app
-      margin: 0
-      max-width: 100vw
-
-    .hide-md-down
-      display: none
-
-  @media screen and (max-width: 768px)
-    #app
-
-  @media screen and (max-width:480px)
-    .hide-sm-down
-      display: none
-
-  @media screen and (max-width: 420px)
-    .hide-xs-down
+  @media screen and (min-width: 420px)
+    .hide-xs-up
       display: none
 
   @media screen and (min-width: 480px)
     .hide-sm-up
       display: none
 
-  @media screen and (min-width: 420px)
-    .hide-xs-up
+  @media screen and (max-width: 340px)
+    .hide-xs-down
+      display: none
+
+  @media screen and (max-width:480px)
+    .hide-sm-down
+      display: none
+
+  @media screen and (max-width: 768px)
+    #app
+
+  @media screen and (max-width: 1024px)
+    #app
+      margin: 0
+      max-width: 100vw
+
+    .hide-md-down
       display: none
 </style>

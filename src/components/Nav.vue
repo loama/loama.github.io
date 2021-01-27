@@ -2,11 +2,9 @@
   <div id="navigation">
     <div class="topbar"></div>
 
-    <img class="profile-pic" src="../assets/img/1.jpeg">
+    <img class="profile-pic" src="/img/1.jpeg" />
 
-    <div class="title">
-      Jaime López
-    </div>
+    <div class="title">Jaime López</div>
 
     <ul class="links" v-scroll-spy-active v-scroll-spy-link>
       <li>
@@ -30,17 +28,19 @@
       </li>
     </ul>
 
-    <a class="download"
-       download="JaimeLopez-cv-late2019.pdf"
-       href="https://raw.githubusercontent.com/loama/loama.github.io/master/public/JaimeLopez-cv-late2019.pdf"
-       target="_blank">Download CV</a>
-
+    <a
+      class="download"
+      download="JaimeLopez-cv-late2019.pdf"
+      href="https://raw.githubusercontent.com/loama/loama.github.io/master/public/JaimeLopez-cv-late2019.pdf"
+      target="_blank"
+      >Download CV</a
+    >
   </div>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       active: 'extract'
     }
@@ -51,67 +51,67 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="sass">
-  @import "@/variables.sass"
+@import "@/variables.sass"
 
-  #navigation
-    background: #FFF
-    border: 2px solid #000
-    min-height: 320px
-    left: calc(50vw - 512px + 24px)
-    position: fixed
-    top: 32px
-    width: 240px
+#navigation
+  background: #FFF
+  border: 2px solid #000
+  min-height: 320px
+  left: calc(50vw - 512px + 24px)
+  position: fixed
+  top: 32px
+  width: 240px
 
-    .topbar
-      background: $yellow
-      height: 48px
-      left: 0
-      position: absolute
-      top: 0
-      width: 100%
+  .topbar
+    background: $yellow
+    height: 48px
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
 
-    .profile-pic
-      margin: 20px
-      position: relative
-      width: 200px
-      z-index: 1
+  .profile-pic
+    margin: 20px
+    position: relative
+    width: 200px
+    z-index: 1
 
-    .title
-      color: #000
-      font-size: 28px
-      line-height: 48px
-      text-align: center
+  .title
+    color: #000
+    font-size: 28px
+    line-height: 48px
+    text-align: center
 
-    ul.links
-      list-style: none
-      padding: 0
+  ul.links
+    list-style: none
+    padding: 0
 
-      li
-        cursor: pointer
-        line-height: 48px
-
-        &.active
-          background: $yellow
-          color: #FFF
-
-        a
-          display: block
-          padding: 0 16px
-          width: calc(100% - 32px)
-
-    a.download
-      background: #000
-      border: 2px solid #000
-      color: #FFF
+    li
       cursor: pointer
-      height: 48px
-      left: calc(50vw - 512px + 24px)
       line-height: 48px
-      position: fixed
-      text-align: center
-      text-decoration: none
-      top: 636px
-      width: 240px
+
+      &.active
+        background: $yellow
+        color: #FFF
+
+      a
+        display: block
+        padding: 0 16px
+        width: calc(100% - 32px)
+
+  a.download
+    background: #000
+    border: 2px solid #000
+    color: #FFF
+    cursor: pointer
+    height: 48px
+    left: calc(50vw - 512px + 24px)
+    line-height: 48px
+    position: fixed
+    text-align: center
+    text-decoration: none
+    top: 636px
+    width: 240px
 
   @media screen and (max-width: 1024px)
     #navigation

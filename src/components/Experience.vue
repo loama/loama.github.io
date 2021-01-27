@@ -1,9 +1,32 @@
 <template>
   <div id="experience">
-    <div class="section-name"> Experience</div>
+    <div class="section-name">Experience</div>
 
     <div class="section">
       <ul class="experience-list">
+        <li>
+          <a target="_blank" href="https://betterfin.com">
+            <div class="logo betterfin"></div>
+          </a>
+
+          <div class="info">
+            <div class="head">
+              <span class="title">
+                <a href="https://betterfin.com" target="_blank"
+                  >Betterfin.com</a
+                >
+                - Full Stack Developer - (Vue/Python) - Remote
+              </span>
+
+              <span class="dates">Jun 20 - Jan 21</span>
+            </div>
+
+            <div class="details">
+              Developed a whole new product for the company customers to connect
+              their bank account and be able to analize their bank expenses.
+            </div>
+          </div>
+        </li>
 
         <li>
           <a target="_blank" href="https://zeel.com">
@@ -13,15 +36,18 @@
           <div class="info">
             <div class="head">
               <span class="title">
-                <a href="https://zeel.com" target="_blank">Zeel.com</a> - Full Stack Developer - (Vue/Node/Python) - Remote
+                <a href="https://zeel.com" target="_blank">Zeel.com</a> - Full
+                Stack Developer - (Vue/Node/Python) - Remote
               </span>
 
               <span class="dates">Apr 18 - May 19</span>
             </div>
 
-            <div class="details">Led the development of the internal tools that allowed our team to run the business.</div>
+            <div class="details">
+              Led the development of the internal tools that allowed our team to
+              run the business.
+            </div>
           </div>
-
         </li>
 
         <li>
@@ -32,12 +58,18 @@
           <div class="info">
             <div class="head">
               <span class="title">
-                <a href="https://cervezasiempre.com" target="_blank">CervezaSiempre.com</a> - Project Manager - (Vue/Node/Python)
+                <a href="https://cervezasiempre.com" target="_blank"
+                  >CervezaSiempre.com</a
+                >
+                - Project Manager - (Vue/Node/Python)
               </span>
 
               <span class="dates">Jan 18 - Apr 18</span>
             </div>
-            <div class="details">Built -in 2 months- the first version of a beer subscription service for the biggest beer company in the world.</div>
+            <div class="details">
+              Built -in 2 months- the first version of a beer subscription
+              service for the biggest beer company in the world.
+            </div>
           </div>
         </li>
 
@@ -49,15 +81,18 @@
           <div class="info">
             <div class="head">
               <span class="title">
-                <a href="https://eiya.mx" target="_blank">Eiya.mx</a> - Lead Developer (Vue/Node/Python)
+                <a href="https://eiya.mx" target="_blank">Eiya.mx</a> - Lead
+                Developer (Vue/Node/Python)
               </span>
 
               <span class="dates">Aug 16 - Oct 17</span>
             </div>
 
-            <div class="details">Coded the messenger app, internal control panel, restaurant panel and customer facing website for tracking.</div>
+            <div class="details">
+              Coded the messenger app, internal control panel, restaurant panel
+              and customer facing website for tracking.
+            </div>
           </div>
-
         </li>
 
         <li>
@@ -68,12 +103,16 @@
           <div class="info">
             <div class="head">
               <span class="title">
-                <a href="https://rappi.com" target="_blank">Rappi.com</a> - Full Stack Developer (jQuery/Python)
+                <a href="https://rappi.com" target="_blank">Rappi.com</a> - Full
+                Stack Developer (jQuery/Python)
               </span>
 
               <span class="dates">Feb 16 - Aug 16</span>
             </div>
-            <div class="details">Started the engineering team in Mexico and built the first version of the internal operations console.</div>
+            <div class="details">
+              Started the engineering team in Mexico and built the first version
+              of the internal operations console.
+            </div>
           </div>
         </li>
 
@@ -85,40 +124,38 @@
           <div class="info">
             <div class="head">
               <span class="title">
-                <a href="https://centraal.com" target="_blank">Centraal.com</a> - Junior Full Stack Developer (jQuery/Python)
+                <a href="https://centraal.com" target="_blank">Centraal.com</a>
+                - Junior Full Stack Developer (jQuery/Python)
               </span>
 
               <span class="dates">Jun 15 - Feb 16</span>
             </div>
-            <div class="details">Built an internal system to manage the coworking space and gave support to all the technology in the space.</div>
+            <div class="details">
+              Built an internal system to manage the coworking space and gave
+              support to all the technology in the space.
+            </div>
           </div>
         </li>
-
       </ul>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-    }
+  data() {
+    return {}
   },
-  methods: {
-  },
+  methods: {},
   name: 'experience'
 }
 </script>
 
 <style scoped lang="sass">
-  @import "@/variables.sass"
-
-  #experience
-
-    .section
-      padding: 0 8px
+/* stylelint-disable */
+#experience
+  .section
+    padding: 0 8px
 
     ul.experience-list
       list-style: none
@@ -126,7 +163,7 @@ export default {
       padding: 0
 
       li
-        border-bottom: 1px solid $light-gray
+        border-bottom: 1px solid light-gray
 
         &:last-child
           border-bottom: none
@@ -141,21 +178,24 @@ export default {
           vertical-align: center
           width: 72px
 
+          &.betterfin
+            background-image: url('/img/companies/betterfin.svg')
+
           &.zeel
-            background-image: url('../assets/img/companies/zeel.svg')
+            background-image: url('/img/companies/zeel.svg')
 
           &.grupomodelo
-            background-image: url('../assets/img/companies/grupomodelo.png')
+            background-image: url('/img/companies/grupomodelo.png')
 
           &.eiya
-            background-image: url('../assets/img/companies/eiya.png')
+            background-image: url('/img/companies/eiya.png')
 
           &.rappi
-            background-image: url('../assets/img/companies/rappi.png')
+            background-image: url('/img/companies/rappi.png')
 
           &.centraal
             background-size: 48px
-            background-image: url('../assets/img/companies/centraal.png')
+            background-image: url('/img/companies/centraal.png')
 
         .info
           display: inline-block

@@ -1,63 +1,76 @@
 <template>
   <div id="school">
-
-    <div class="section-name"> School </div>
+    <div class="section-name">School</div>
 
     <div class="section">
       <ul class="schools">
         <li>
-          <a target="_blank" href="https://devf.mx"><div class="logo devf"></div></a>
+          <a target="_blank" href="https://devf.mx"
+            ><div class="logo devf"></div
+          ></a>
           <div class="content">
-            <div class="head"> <a target="_blank" href="https://devf.mx"> Dev.F </a> - Developer Bootcamp </div>
-            <div class="dates"> Apr 15 - Jun 15 </div>
+            <div class="head">
+              <a target="_blank" href="https://devf.mx"> Dev.F </a> - Developer
+              Bootcamp
+            </div>
+            <div class="dates">Apr 15 - Jun 15</div>
           </div>
         </li>
 
         <li>
-          <a target="_blank" href="http://www.ingenieria.unam.mx/index.php"><div class="logo fi"></div></a>
+          <a target="_blank" href="http://www.ingenieria.unam.mx/index.php"
+            ><div class="logo fi"></div
+          ></a>
           <div class="content">
-            <div class="head"> <a target="_blank" href="http://www.ingenieria.unam.mx/index.php"> UNAM </a> - Industrial Engineering </div>
-            <div class="dates"> Aug 14 - Apr 15 </div>
+            <div class="head">
+              <a target="_blank" href="http://www.ingenieria.unam.mx/index.php">
+                UNAM
+              </a>
+              - Industrial Engineering
+            </div>
+            <div class="dates">Aug 14 - Apr 15</div>
           </div>
         </li>
 
         <li>
-          <a target="_blank" href="https://www.escasto.ipn.mx/"><div class="logo ipn"></div></a>
+          <a target="_blank" href="https://www.escasto.ipn.mx/"
+            ><div class="logo ipn"></div
+          ></a>
           <div class="content">
-            <div class="head"> <a target="_blank" href="https://www.escasto.ipn.mx/"> IPN </a> - Business Admin </div>
-            <div class="dates"> Aug 14 - Apr 15 </div>
+            <div class="head">
+              <a target="_blank" href="https://www.escasto.ipn.mx/"> IPN </a> -
+              Business Admin
+            </div>
+            <div class="dates">Aug 14 - Apr 15</div>
           </div>
         </li>
       </ul>
     </div>
-
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-    }
+  data() {
+    return {}
   },
-  methods: {
-  },
+  methods: {},
   name: 'school'
 }
 </script>
 
 <style scoped lang="sass">
-  #school
-    display: inline-block
-    margin-right: 20px
-    vertical-align: top
-    width: calc(50% - 8px)
+#school
+  display: inline-block
+  margin-right: 20px
+  vertical-align: top
+  width: calc(50% - 8px)
 
-    .section
-      background: none
-      border: none
-      max-width: 100%
-      padding: 0
+  .section
+    background: none
+    border: none
+    max-width: 100%
+    padding: 0
 
   ul.schools
     list-style: none
@@ -81,13 +94,13 @@ export default {
         width: 64px
 
         &.devf
-          background-image: url('../assets/img/education/devf.png')
+          background-image: url('/img/education/devf.png')
 
         &.fi
-          background-image: url('../assets/img/education/fi.png')
+          background-image: url('/img/education/fi.png')
 
         &.ipn
-          background-image: url('../assets/img/education/ipn.png')
+          background-image: url('/img/education/ipn.png')
 
       .content
         display: inline-block
@@ -108,5 +121,4 @@ export default {
 
       .section
         width: 100%
-
 </style>

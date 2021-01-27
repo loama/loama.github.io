@@ -1,47 +1,47 @@
 <template>
   <div id="hobbies">
-      <div class="section-name"> Hobbies </div>
+    <div class="section-name">Hobbies</div>
 
-      <div class="section">
-        <img class="visited_countries" src="../assets/img/visited_countries.jpg">
+    <div class="section">
+      <img class="visited_countries" src="/img/visited_countries.jpg" />
 
-        <span> I love traveling, have been to 42 countries so far. I also enjoy bicycling, riding my monocycle, going to hackathons and petting doggos. </span>
-        <img src="../assets/img/doggo.png" class="doggo">
-      </div>
+      <span>
+        I love traveling, been to 50 countries so far. I also enjoy riding
+        bikes, my monocycle, going to hackathons and petting doggos.
+      </span>
+      <img src="/img/doggo.png" class="doggo" />
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  data () {
-    return {
-    }
+  data() {
+    return {}
   },
-  methods: {
-  },
+  methods: {},
   name: 'hobbies'
 }
 </script>
 
 <style scoped lang="sass">
-  #hobbies
-    display: inline-block
-    width: calc(50% - 16px)
+#hobbies
+  display: inline-block
+  width: calc(50% - 16px)
 
-    .section
-      font-size: 14px
-      max-width: calc(100% - 16px)
-      position: relative
+  .section
+    font-size: 14px
+    max-width: calc(100% - 16px)
+    position: relative
 
-      img.visited_countries
-        margin: 0 10%
-        width: 80%
+    img.visited_countries
+      margin: 0 10%
+      width: 80%
 
-      img.doggo
-        bottom: 0
-        height: 48px
-        position: absolute
-        right: 8px
+    img.doggo
+      float: right
+      height: 48px
+      margin-top: -24px
 
   @media screen and (max-width: 576px)
     #hobbies
@@ -50,5 +50,4 @@ export default {
 
       .section
         width: 100%
-
 </style>
