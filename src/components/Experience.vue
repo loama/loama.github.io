@@ -29,6 +29,30 @@
         </li>
 
         <li>
+          <a target="_blank" href="https://betterfin.com">
+            <div class="logo panl"></div>
+          </a>
+
+          <div class="info">
+            <div class="head">
+              <span class="title">
+                <a href="https://panl.app" target="_blank"
+                  >Panl.app</a
+                >
+                - Founder - (Vue/Node)
+              </span>
+
+              <span class="dates">Jun 19 - Jun 20</span>
+            </div>
+
+            <div class="details">
+              Bootstraped a startup building software for SMB, starting with coworkings.
+              I learnt a lot but it wasn't going as fast as I expected.
+            </div>
+          </div>
+        </li>
+
+        <li>
           <a target="_blank" href="https://zeel.com">
             <div class="logo zeel"></div>
           </a>
@@ -180,6 +204,10 @@ export default {
 
           &.betterfin
             background-image: url('/img/companies/betterfin.svg')
+
+          &.panl
+            background-image: url('/img/companies/Panl.svg')
+            background-size: 32px
 
           &.zeel
             background-image: url('/img/companies/zeel.svg')
