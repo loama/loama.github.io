@@ -43,8 +43,8 @@
         and that is my favorite setup. That has led me to learn to do
         <span class="black">
           multiple things besides coding, like mobile apps, design, setup servers in the
-          cloud, CI/CD, prioritize team tasks and manage people.</span
-        >
+          cloud, CI/CD, writing my own SQL queries, prioritize team tasks and manage people.
+        </span>
       </p>
     </div>
   </div>

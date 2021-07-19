@@ -15,7 +15,7 @@
                 <a href="https://betterfin.com" target="_blank"
                   >Betterfin.com</a
                 >
-                - Full Stack Developer - (Vue/Python) - Remote
+                - Full Stack Developer - (Vue/Python/PG) - Remote
               </span>
 
               <span class="dates">Jun 20 - Jan 21</span>
@@ -39,7 +39,7 @@
                 <a href="https://panl.app" target="_blank"
                   >Panl.app</a
                 >
-                - Founder - (Vue/Node)
+                - Founder - (Vue/Node/PG/Firebase)
               </span>
 
               <span class="dates">Jun 19 - Jun 20</span>
@@ -61,7 +61,7 @@
             <div class="head">
               <span class="title">
                 <a href="https://zeel.com" target="_blank">Zeel.com</a> - Full
-                Stack Developer - (Vue/Node/Python) - Remote
+                Stack Developer - (Vue/Node/Python/PG) - Remote
               </span>
 
               <span class="dates">Apr 18 - May 19</span>
@@ -85,7 +85,7 @@
                 <a href="https://cervezasiempre.com" target="_blank"
                   >CervezaSiempre.com</a
                 >
-                - Project Manager - (Vue/Node/Python)
+                - Project Manager - (Vue/Node/Python/Firebase)
               </span>
 
               <span class="dates">Jan 18 - Apr 18</span>
@@ -106,7 +106,7 @@
             <div class="head">
               <span class="title">
                 <a href="https://eiya.mx" target="_blank">Eiya.mx</a> - Lead
-                Developer (Vue/Node/Python)
+                Developer (Vue/Node/Python/PG)
               </span>
 
               <span class="dates">Aug 16 - Oct 17</span>
@@ -128,7 +128,7 @@
             <div class="head">
               <span class="title">
                 <a href="https://rappi.com" target="_blank">Rappi.com</a> - Full
-                Stack Developer (jQuery/Python)
+                Stack Developer (jQuery/Python/PG)
               </span>
 
               <span class="dates">Feb 16 - Aug 16</span>

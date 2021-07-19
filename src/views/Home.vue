@@ -58,7 +58,7 @@ export default {
 
 <style lang="sass">
 #content
-  margin: 32px 24px 0 292px
+  margin: 32px 24px 0 32px
 
   .section
     background: #FFF
@@ -89,7 +89,7 @@ footer
     &:hover
       opacity: 1
 
-  @media screen and (max-width: 1024px)
+  @media (max-width: 1024px)
     #content
       margin: 32px 16px 32px 276px
 
@@ -98,7 +98,7 @@ footer
         margin-bottom: 24px
         width: calc(100vw - 312px)
 
-  @media screen and (max-width: 768px)
+  @media (max-width: 768px)
     #content
       margin: 32px 16px
 
@@ -106,7 +106,7 @@ footer
         max-width: calc(100vw - 51px)
         width: calc(100vw - 51px)
 
-  @media screen and (max-width: 768px)
+  @media (max-width: 768px)
     #content
       margin: 144px 16px 32px 16px
 </style>
